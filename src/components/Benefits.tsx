@@ -1,26 +1,26 @@
 
-import { Calendar, Clock, Shield, Sparkles } from "lucide-react";
+import { Calendar, Users, Smartphone, Clock } from "lucide-react";
 
 const benefits = [
   {
     icon: Calendar,
     title: "Agenda personalizada",
-    description: "Configure seus horários, folgas e intervalos do seu jeito"
-  },
-  {
-    icon: Shield,
-    title: "Sem conflitos",
-    description: "Proteção automática contra sobreposição de horários"
+    description: "Configure horários, folgas e férias do seu jeito"
   },
   {
     icon: Clock,
-    title: "Tempo otimizado",
-    description: "Organize seu dia com poucos cliques"
+    title: "Intervalos flexíveis",
+    description: "Defina seus horários de almoço e pausas"
   },
   {
-    icon: Sparkles,
-    title: "Interface simples",
-    description: "Fácil de usar desde o primeiro dia"
+    icon: Smartphone,
+    title: "Link de agendamento",
+    description: "Compartilhe nas redes sociais para agendamentos automáticos"
+  },
+  {
+    icon: Users,
+    title: "Múltiplos barbeiros",
+    description: "Adicione toda sua equipe no plano premium"
   }
 ];
 

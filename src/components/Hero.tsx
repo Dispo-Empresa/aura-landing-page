@@ -8,17 +8,16 @@ export function Hero() {
       <div className="container">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-outfit font-bold leading-tight mb-6">
-            Controle total da sua agenda, sem complicação
+            O app que organiza sua barbearia do seu jeito
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-            O Aura é o app que facilita a gestão da sua barbearia, permitindo que você foque no que realmente importa: seus clientes.
+            Configure sua agenda do seu jeito, gerencie agendamentos e tenha total controle da sua barbearia. Comece grátis e cresça conforme sua necessidade.
           </p>
-          <Button size="lg" className="bg-accent hover:bg-accent/90">
-            Testar grátis por 7 dias
+          <Button size="lg" className="bg-[#2A98D2] hover:bg-[#2A98D2]/90">
+            Baixe agora gratuitamente
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
       </div>
     </section>
-  );
-}
+  
