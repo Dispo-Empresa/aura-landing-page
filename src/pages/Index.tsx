@@ -2,8 +2,8 @@
 import { Benefits } from "@/components/Benefits";
 import { FAQ } from "@/components/FAQ";
 import { Hero } from "@/components/Hero";
-import { Testimonial } from "@/components/Testimonial";
 import { AppMockups } from "@/components/AppMockups";
+import { AppMobileDesktopMockups } from "@/components/AppMobileDesktopMockups";
 import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -14,16 +14,13 @@ const Index = () => {
       <header className="py-6 border-b">
         <div className="container flex items-center justify-between">
           <Logo />
-          <Button variant="outline" className="text-[#2A98D2] border-[#2A98D2] hover:bg-[#2A98D2] hover:text-white">
-            Entrar
-          </Button>
         </div>
       </header>
 
       <Hero />
       <Benefits />
       <AppMockups />
-      <Testimonial />
+      <AppMobileDesktopMockups />
       <FAQ />
       
       <section className="py-24">
