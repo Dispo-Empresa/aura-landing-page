@@ -1,0 +1,46 @@
+
+import { Calendar, Clock, Shield, Sparkles } from "lucide-react";
+
+const benefits = [
+  {
+    icon: Calendar,
+    title: "Agenda personalizada",
+    description: "Configure seus horários, folgas e intervalos do seu jeito"
+  },
+  {
+    icon: Shield,
+    title: "Sem conflitos",
+    description: "Proteção automática contra sobreposição de horários"
+  },
+  {
+    icon: Clock,
+    title: "Tempo otimizado",
+    description: "Organize seu dia com poucos cliques"
+  },
+  {
+    icon: Sparkles,
+    title: "Interface simples",
+    description: "Fácil de usar desde o primeiro dia"
+  }
+];
+
+export function Benefits() {
+  return (
+    <section className="py-24 bg-muted">
+      <div className="container">
+        <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-12">
+          Tudo que você precisa para uma gestão tranquila
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {benefits.map((benefit) => (
+            <div key={benefit.title} className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
+              <benefit.icon className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-outfit font-medium mb-2">{benefit.title}</h3>
+              <p className="text-muted-foreground">{benefit.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
