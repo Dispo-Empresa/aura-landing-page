@@ -1,6 +1,4 @@
 
-import Image from '@/components/ui/image';  // Assuming we'll use a custom image component
-
 export function Logo() {
   return (
     <div className="text-[#2A98D2] font-outfit font-bold text-2xl flex items-center">
