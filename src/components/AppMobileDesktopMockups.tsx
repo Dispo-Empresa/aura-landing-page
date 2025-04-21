@@ -30,4 +30,6 @@ export function AppMobileDesktopMockups() {
         </div>
       </div>
     </section>
+  )
+};
   
