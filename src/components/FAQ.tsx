@@ -1,4 +1,3 @@
-
 import {
   Accordion,
   AccordionContent,
@@ -18,10 +17,6 @@ const faqs = [
   {
     question: "E se eu já tiver agendamentos?",
     answer: "Você pode importar seus agendamentos existentes facilmente para o Aura, sem perder nenhuma informação."
-  },
-  {
-    question: "Posso usar em mais de uma barbearia?",
-    answer: "Sim! O Aura permite gerenciar múltiplas barbearias na mesma conta, mantendo tudo organizado."
   }
 ];
 
