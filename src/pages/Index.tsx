@@ -4,6 +4,8 @@ import { FAQ } from "@/components/FAQ";
 import { Hero } from "@/components/Hero";
 import { AppMockups } from "@/components/AppMockups";
 import { AppMobileDesktopMockups } from "@/components/AppMobileDesktopMockups";
+import { ShowcaseMockups } from "@/components/ShowcaseMockups";
+import { PricingPlans } from "@/components/PricingPlans";
 import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -18,7 +20,9 @@ const Index = () => {
       </header>
 
       <Hero />
+      <ShowcaseMockups />
       <Benefits />
+      <PricingPlans />
       <AppMockups />
       <AppMobileDesktopMockups />
       <FAQ />
