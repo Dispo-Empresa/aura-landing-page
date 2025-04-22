@@ -1,5 +1,6 @@
 
 import { Check, X } from "lucide-react";
+import { PlanDropdown } from "./PlanDropdown";
 
 const plans = [
   {
@@ -18,8 +19,6 @@ const plans = [
     ],
     button: {
       text: "Começar grátis",
-      href: "#",
-      style: "bg-[#2A98D2] hover:bg-[#2A98D2]/90 text-white"
     }
   },
   {
@@ -38,8 +37,6 @@ const plans = [
     ],
     button: {
       text: "Conheça o Pro",
-      href: "#",
-      style: "bg-[#34C759] hover:bg-[#34C759]/90 text-white"
     }
   }
 ];
@@ -79,44 +76,12 @@ export function PricingPlans() {
                   </li>
                 ))}
               </ul>
-              <a href={plan.button.href} className={`w-full`}>
-                <button
-                  type="button"
-                  className={`w-full py-3 rounded-lg text-lg font-semibold transition-colors duration-200 ${plan.button.style}`}
-                >
-                  {plan.button.text}
-                </button>
-              </a>
-              <div className="flex flex-row gap-2 mt-5 w-full justify-center">
-                <a
-                  href={GOOGLE_PLAY_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Disponível na Google Play"
-                  className="w-[132px] h-[40px] flex items-center justify-center bg-[#222] rounded-lg hover:scale-105 transition-transform"
-                >
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_PT_BR.svg"
-                    alt="Disponível no Google Play"
-                    className="h-8"
-                    style={{ filter: "drop-shadow(0 1px 2px #0004)" }}
-                  />
-                </a>
-                <a
-                  href={APP_STORE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Disponível na App Store"
-                  className="w-[120px] h-[40px] flex items-center justify-center bg-[#222] rounded-lg hover:scale-105 transition-transform"
-                >
-                  <img
-                    src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                    alt="Disponível na App Store"
-                    className="h-8"
-                    style={{ filter: "drop-shadow(0 1px 2px #0004)" }}
-                  />
-                </a>
-              </div>
+              <PlanDropdown
+                label={plan.button.text}
+                googlePlayUrl={GOOGLE_PLAY_URL}
+                appStoreUrl={APP_STORE_URL}
+                className={idx === 1 ? "!bg-[#34C759] !hover:bg-[#34C759]/90" : ""}
+              />
             </div>
           ))}
         </div>
