@@ -44,6 +44,10 @@ const plans = [
   }
 ];
 
+// URLs fictícios das lojas (troque pelos reais se precisar)
+const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.auraapp";
+const APP_STORE_URL = "https://apps.apple.com/app/id1234567890";
+
 export function PricingPlans() {
   return (
     <section className="py-24 bg-muted">
@@ -83,6 +87,36 @@ export function PricingPlans() {
                   {plan.button.text}
                 </button>
               </a>
+              <div className="flex flex-row gap-2 mt-5 w-full justify-center">
+                <a
+                  href={GOOGLE_PLAY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Disponível na Google Play"
+                  className="w-[132px] h-[40px] flex items-center justify-center bg-[#222] rounded-lg hover:scale-105 transition-transform"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_PT_BR.svg"
+                    alt="Disponível no Google Play"
+                    className="h-8"
+                    style={{ filter: "drop-shadow(0 1px 2px #0004)" }}
+                  />
+                </a>
+                <a
+                  href={APP_STORE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Disponível na App Store"
+                  className="w-[120px] h-[40px] flex items-center justify-center bg-[#222] rounded-lg hover:scale-105 transition-transform"
+                >
+                  <img
+                    src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                    alt="Disponível na App Store"
+                    className="h-8"
+                    style={{ filter: "drop-shadow(0 1px 2px #0004)" }}
+                  />
+                </a>
+              </div>
             </div>
           ))}
         </div>
