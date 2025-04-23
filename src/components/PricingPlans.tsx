@@ -1,5 +1,11 @@
 
-import { Check, X } from "lucide-react";
+import { Check, X, ChevronDown } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const plans = [
   {
@@ -79,44 +85,40 @@ export function PricingPlans() {
                   </li>
                 ))}
               </ul>
-              <a href={plan.button.href} className={`w-full`}>
-                <button
-                  type="button"
-                  className={`w-full py-3 rounded-lg text-lg font-semibold transition-colors duration-200 ${plan.button.style}`}
-                >
-                  {plan.button.text}
-                </button>
-              </a>
-              <div className="flex flex-row gap-2 mt-5 w-full justify-center">
-                <a
-                  href={GOOGLE_PLAY_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Disponível na Google Play"
-                  className="w-[132px] h-[40px] flex items-center justify-center bg-[#222] rounded-lg hover:scale-105 transition-transform"
-                >
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_PT_BR.svg"
-                    alt="Disponível no Google Play"
-                    className="h-8"
-                    style={{ filter: "drop-shadow(0 1px 2px #0004)" }}
-                  />
-                </a>
-                <a
-                  href={APP_STORE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Disponível na App Store"
-                  className="w-[120px] h-[40px] flex items-center justify-center bg-[#222] rounded-lg hover:scale-105 transition-transform"
-                >
-                  <img
-                    src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                    alt="Disponível na App Store"
-                    className="h-8"
-                    style={{ filter: "drop-shadow(0 1px 2px #0004)" }}
-                  />
-                </a>
-              </div>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <button 
+                    type="button" 
+                    className={`w-full py-3 rounded-lg text-lg font-semibold transition-colors duration-200 flex items-center justify-center ${plan.button.style}`}
+                  >
+                    {plan.button.text}
+                    <ChevronDown className="w-5 h-5 ml-2" />
+                  </button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-56 bg-white">
+                  <DropdownMenuItem asChild>
+                    <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                      <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_PT_BR.svg" 
+                        alt="Google Play" 
+                        className="h-5 mr-2"
+                      />
+                      Baixar para Android
+                    </a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                      <img 
+                        src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+                        alt="App Store" 
+                        className="h-5 mr-2"
+                      />
+                      Baixar para iOS
+                    </a>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+              
             </div>
           ))}
         </div>

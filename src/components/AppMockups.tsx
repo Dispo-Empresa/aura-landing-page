@@ -17,7 +17,7 @@ export function AppMockups() {
           </div>
           <div className="relative">
             <div className="absolute -right-40 top-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[#2A98D2]/10 rounded-full blur-3xl"></div>
-            <div className="relative bg-white p-4 rounded-2xl shadow-lg">
+            <div className="relative bg-transparent p-4 rounded-2xl shadow-lg">
               <div className="aspect-[16/9] bg-[#2A98D2]/5 rounded-lg flex items-center justify-center">
                 <Smartphone className="w-16 h-16 text-[#2A98D2]" />
               </div>
