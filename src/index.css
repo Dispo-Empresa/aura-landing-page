@@ -38,8 +38,41 @@
     --radius: 0.5rem;
   }
 
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 6%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 5.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 202 100% 44%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 13.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 200 100% 40%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 23.9%;
+    --input: 240 3.7% 23.9%;
+    --ring: 202 100% 44%;
+
+    --radius: 0.5rem;
+  }
+
   body {
     @apply bg-background text-foreground font-inter;
+    transition: background 0.2s, color 0.2s;
   }
 }
 
@@ -49,5 +82,8 @@
   }
   .font-inter {
     font-family: 'Inter', sans-serif;
+  }
+  .glass {
+    @apply bg-white/10 dark:bg-black/20 backdrop-blur-md border border-white/10 dark:border-white/10 rounded-2xl;
   }
 }
