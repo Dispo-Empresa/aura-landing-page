@@ -1,5 +1,5 @@
 
-import { Check, X, ChevronDown } from "lucide-react";
+import { Check, X, ChevronDown, Android, Apple } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -98,21 +98,13 @@ export function PricingPlans() {
                 <DropdownMenuContent className="w-56 bg-white">
                   <DropdownMenuItem asChild>
                     <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                      <img 
-                        src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_PT_BR.svg" 
-                        alt="Google Play" 
-                        className="h-5 mr-2"
-                      />
+                      <Android className="h-5 w-5 mr-2 text-[#34C759]" />
                       Baixar para Android
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
                     <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                      <img 
-                        src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
-                        alt="App Store" 
-                        className="h-5 mr-2"
-                      />
+                      <Apple className="h-5 w-5 mr-2 text-[#0A84FF]" />
                       Baixar para iOS
                     </a>
                   </DropdownMenuItem>
@@ -129,3 +121,4 @@ export function PricingPlans() {
     </section>
   );
 }
+
