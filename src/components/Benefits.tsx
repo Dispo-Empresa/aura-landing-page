@@ -33,7 +33,10 @@ export function Benefits() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {benefits.map((benefit) => (
-            <div key={benefit.title} className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
+            <div
+              key={benefit.title}
+              className="flex flex-col items-center text-center p-6 bg-white dark:bg-card rounded-lg shadow-sm transition-colors"
+            >
               <benefit.icon className="w-12 h-12 text-[#2A98D2] mb-4" />
               <h3 className="text-xl font-outfit font-medium mb-2">{benefit.title}</h3>
               <p className="text-muted-foreground">{benefit.description}</p>
@@ -44,3 +47,4 @@ export function Benefits() {
     </section>
   );
 }
+
