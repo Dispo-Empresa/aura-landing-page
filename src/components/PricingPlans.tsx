@@ -1,5 +1,4 @@
-
-import { Check, X, ChevronDown, Android, Apple } from "lucide-react";
+import { Check, X, ChevronDown, Smartphone, Monitor } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -98,13 +97,13 @@ export function PricingPlans() {
                 <DropdownMenuContent className="w-56 bg-white">
                   <DropdownMenuItem asChild>
                     <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                      <Android className="h-5 w-5 mr-2 text-[#34C759]" />
+                      <Smartphone className="h-5 w-5 mr-2 text-[#34C759]" />
                       Baixar para Android
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
                     <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                      <Apple className="h-5 w-5 mr-2 text-[#0A84FF]" />
+                      <Monitor className="h-5 w-5 mr-2 text-[#0A84FF]" />
                       Baixar para iOS
                     </a>
                   </DropdownMenuItem>
@@ -121,4 +120,3 @@ export function PricingPlans() {
     </section>
   );
 }
-

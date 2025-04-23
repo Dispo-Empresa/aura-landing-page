@@ -1,4 +1,3 @@
-
 import { Benefits } from "@/components/Benefits";
 import { FAQ } from "@/components/FAQ";
 import { Hero } from "@/components/Hero";
@@ -8,7 +7,7 @@ import { ShowcaseMockups } from "@/components/ShowcaseMockups";
 import { PricingPlans } from "@/components/PricingPlans";
 import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/button";
-import { Android, Apple } from "lucide-react";
+import { Smartphone, Monitor } from "lucide-react";
 
 const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.auraapp";
 const APP_STORE_URL = "https://apps.apple.com/app/id1234567890";
@@ -47,7 +46,7 @@ const Index = () => {
                 size="lg"
                 className="bg-[#34C759] hover:bg-[#34C759]/90 w-full sm:w-auto font-semibold"
               >
-                <Android className="mr-2 h-5 w-5" />
+                <Smartphone className="mr-2 h-5 w-5" />
                 Baixar para Android
               </Button>
             </a>
@@ -62,7 +61,7 @@ const Index = () => {
                 size="lg"
                 className="bg-[#0A84FF] hover:bg-[#0A84FF]/90 w-full sm:w-auto font-semibold"
               >
-                <Apple className="mr-2 h-5 w-5" />
+                <Monitor className="mr-2 h-5 w-5" />
                 Baixar para iOS
               </Button>
             </a>
@@ -83,4 +82,3 @@ const Index = () => {
 };
 
 export default Index;
-

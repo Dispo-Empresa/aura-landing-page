@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Android, Apple } from "lucide-react";
+import { Smartphone, Monitor } from "lucide-react";
 
 export function Hero() {
   return (
@@ -23,7 +23,7 @@ export function Hero() {
                 size="lg"
                 className="bg-[#34C759] hover:bg-[#34C759]/90 w-full sm:w-auto font-semibold"
               >
-                <Android className="mr-2 h-5 w-5" />
+                <Smartphone className="mr-2 h-5 w-5" />
                 Baixar para Android
               </Button>
             </a>
@@ -36,7 +36,7 @@ export function Hero() {
                 size="lg"
                 className="bg-[#0A84FF] hover:bg-[#0A84FF]/90 w-full sm:w-auto font-semibold"
               >
-                <Apple className="mr-2 h-5 w-5" />
+                <Monitor className="mr-2 h-5 w-5" />
                 Baixar para iOS
               </Button>
             </a>
@@ -46,4 +46,3 @@ export function Hero() {
     </section>
   );
 }
-
