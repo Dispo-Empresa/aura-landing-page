@@ -13,7 +13,7 @@ export function useTheme(): [Theme, (theme: Theme) => void] {
       const stored = localStorage.getItem(THEME_LOCALSTORAGE_KEY) as Theme | null;
       if (stored === "dark" || stored === "light") return stored;
     }
-    return "light"; // padrão
+    return "dark"; // AGORA dark é o padrão!
   });
 
   useEffect(() => {
@@ -35,3 +35,4 @@ export function useTheme(): [Theme, (theme: Theme) => void] {
 
   return [theme, setTheme];
 }
+

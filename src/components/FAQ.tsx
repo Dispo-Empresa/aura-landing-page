@@ -1,3 +1,4 @@
+
 import {
   Accordion,
   AccordionContent,
@@ -27,7 +28,7 @@ export function FAQ() {
         <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-12">
           Dúvidas Frequentes
         </h2>
-        <Accordion type="single" collapsible className="bg-white rounded-lg p-6">
+        <Accordion type="single" collapsible className="bg-white dark:bg-card rounded-lg p-6 transition-colors">
           {faqs.map((faq, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
               <AccordionTrigger className="text-left font-medium">
@@ -43,3 +44,4 @@ export function FAQ() {
     </section>
   );
 }
+

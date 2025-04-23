@@ -9,8 +9,8 @@ export function AppMobileDesktopMockups() {
           Seu negócio na palma da sua mão
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="relative bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center">
-            <div className="aspect-[16/9] bg-[#2A98D2]/5 rounded-lg flex items-center justify-center mb-4 w-full">
+          <div className="relative bg-white dark:bg-card p-6 rounded-2xl shadow-lg flex flex-col items-center transition-colors">
+            <div className="aspect-[16/9] bg-[#2A98D2]/5 dark:bg-[#2A98D2]/10 rounded-lg flex items-center justify-center mb-4 w-full">
               <Calendar className="w-16 h-16 text-[#2A98D2]" />
             </div>
             <h3 className="text-xl font-outfit font-medium mb-2">Agenda Flexível</h3>
@@ -18,8 +18,8 @@ export function AppMobileDesktopMockups() {
               Configure horários, intervalos e folgas do seu jeito, sem afetar agendamentos existentes
             </p>
           </div>
-          <div className="relative bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center">
-            <div className="aspect-[16/9] bg-[#2A98D2]/5 rounded-lg flex items-center justify-center mb-4 w-full">
+          <div className="relative bg-white dark:bg-card p-6 rounded-2xl shadow-lg flex flex-col items-center transition-colors">
+            <div className="aspect-[16/9] bg-[#2A98D2]/5 dark:bg-[#2A98D2]/10 rounded-lg flex items-center justify-center mb-4 w-full">
               <Users className="w-16 h-16 text-[#2A98D2]" />
             </div>
             <h3 className="text-xl font-outfit font-medium mb-2">Planos Flexíveis</h3>
@@ -32,3 +32,4 @@ export function AppMobileDesktopMockups() {
     </section>
   );
 }
+
