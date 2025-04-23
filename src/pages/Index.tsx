@@ -1,3 +1,4 @@
+
 import { Benefits } from "@/components/Benefits";
 import { FAQ } from "@/components/FAQ";
 import { Hero } from "@/components/Hero";
@@ -8,6 +9,7 @@ import { PricingPlans } from "@/components/PricingPlans";
 import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { Smartphone, Monitor } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.auraapp";
 const APP_STORE_URL = "https://apps.apple.com/app/id1234567890";
@@ -18,6 +20,7 @@ const Index = () => {
       <header className="py-6 border-b">
         <div className="container flex items-center justify-between">
           <Logo />
+          <ThemeToggle />
         </div>
       </header>
 
