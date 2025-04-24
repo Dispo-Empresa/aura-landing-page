@@ -1,4 +1,4 @@
-import { Check, X, ChevronDown, Smartphone, Monitor } from "lucide-react";
+import { Check, X, ChevronDown } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -64,7 +64,7 @@ export function PricingPlans() {
           {plans.map((plan, idx) => (
             <div
               key={plan.title}
-              className={`flex-1 bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center border border-muted ${idx === 1 ? "scale-105 border-blue-200" : ""}`}
+              className={`flex-1 bg-card dark:glass rounded-2xl shadow-lg p-8 flex flex-col items-center border border-border/50 dark:border-white/10 ${idx === 1 ? "md:scale-105" : ""}`}
             >
               <h3 className="text-2xl font-medium mb-1 font-outfit">{plan.title}</h3>
               <div className="text-3xl font-bold mb-1">{plan.price}</div>
@@ -73,12 +73,12 @@ export function PricingPlans() {
                 {plan.features.map((feat) => (
                   <li
                     key={feat.label}
-                    className={`flex items-center gap-2 py-1 text-base ${feat.included ? "text-foreground" : "text-muted-foreground line-through"}`}
+                    className={`flex items-center gap-2 py-1 text-base ${feat.included ? "text-foreground" : "text-muted-foreground/60 line-through"}`}
                   >
                     {feat.included ? (
                       <Check className="w-5 h-5 text-[#34C759]" />
                     ) : (
-                      <X className="w-5 h-5 text-red-400" />
+                      <X className="w-5 h-5 text-red-400/70" />
                     )}
                     {feat.label}
                   </li>
@@ -94,22 +94,19 @@ export function PricingPlans() {
                     <ChevronDown className="w-5 h-5 ml-2" />
                   </button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-56 bg-white">
+                <DropdownMenuContent className="w-56">
                   <DropdownMenuItem asChild>
                     <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                      <Smartphone className="h-5 w-5 mr-2 text-[#34C759]" />
-                      Baixar para Android
+                      <img src="/lovable-uploads/fda67013-3c2d-4afe-8c1b-83fbd4c967c8.png" alt="Disponível no Google Play" className="h-8" />
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
                     <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                      <Monitor className="h-5 w-5 mr-2 text-[#0A84FF]" />
-                      Baixar para iOS
+                      <img src="/lovable-uploads/21e74c41-69d5-46f9-aa51-c257dc13c867.png" alt="Disponível na App Store" className="h-8" />
                     </a>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-              
             </div>
           ))}
         </div>

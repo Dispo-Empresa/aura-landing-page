@@ -1,4 +1,3 @@
-
 import { Benefits } from "@/components/Benefits";
 import { FAQ } from "@/components/FAQ";
 import { Hero } from "@/components/Hero";
@@ -45,13 +44,7 @@ const Index = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button
-                size="lg"
-                className="bg-[#34C759] hover:bg-[#34C759]/90 w-full sm:w-auto font-semibold"
-              >
-                <Smartphone className="mr-2 h-5 w-5" />
-                Baixar para Android
-              </Button>
+              <img src="/lovable-uploads/fda67013-3c2d-4afe-8c1b-83fbd4c967c8.png" alt="Disponível no Google Play" className="h-16 w-auto" />
             </a>
             <a
               href={APP_STORE_URL}
@@ -60,13 +53,7 @@ const Index = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button
-                size="lg"
-                className="bg-[#0A84FF] hover:bg-[#0A84FF]/90 w-full sm:w-auto font-semibold"
-              >
-                <Monitor className="mr-2 h-5 w-5" />
-                Baixar para iOS
-              </Button>
+              <img src="/lovable-uploads/21e74c41-69d5-46f9-aa51-c257dc13c867.png" alt="Disponível na App Store" className="h-16 w-auto" />
             </a>
           </div>
         </div>
