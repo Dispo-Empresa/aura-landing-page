@@ -1,3 +1,4 @@
+
 import { Benefits } from "@/components/Benefits";
 import { FAQ } from "@/components/FAQ";
 import { Hero } from "@/components/Hero";
@@ -31,39 +32,39 @@ const Index = () => {
       <AppMobileDesktopMockups />
       <FAQ />
       
-      <section className="py-24">
-        <div className="container text-center">
+      <section className="py-16 md:py-24">
+        <div className="container text-center px-4">
           <h2 className="text-3xl md:text-4xl font-outfit font-semibold mb-8">
             Pronto para simplificar a gestão da sua barbearia?
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href={GOOGLE_PLAY_URL}
-              className="w-full sm:w-auto"
+              className="w-full sm:w-auto inline-flex justify-center"
               aria-label="Baixar para Android"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/lovable-uploads/google-play.png" alt="Disponível no Google Play" className="h-14 w-auto" />
+              <img src="/lovable-uploads/google-play.png" alt="Disponível no Google Play" className="h-14 w-auto max-w-[200px]" />
             </a>
             <a
               href={APP_STORE_URL}
-              className="w-full sm:w-auto"
+              className="w-full sm:w-auto inline-flex justify-center"
               aria-label="Baixar para iOS"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/lovable-uploads/ios.png" alt="Disponível na App Store" className="h-16 w-auto" />
+              <img src="/lovable-uploads/ios.png" alt="Disponível na App Store" className="h-16 w-auto max-w-[200px]" />
             </a>
           </div>
         </div>
       </section>
 
-      <footer className="py-8 bg-muted">
-        <div className="container">
-          <div className="flex items-center justify-between">
+      <footer className="py-6 md:py-8 bg-muted">
+        <div className="container px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <Logo />
-            <p className="text-muted-foreground">© 2025 Aura. Todos os direitos reservados.</p>
+            <p className="text-sm text-muted-foreground text-center md:text-right">© 2025 Aura. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
