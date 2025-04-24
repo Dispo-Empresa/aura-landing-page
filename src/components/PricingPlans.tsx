@@ -1,10 +1,5 @@
-import { Check, X, ChevronDown } from "lucide-react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+
+import { Check, X } from "lucide-react";
 
 const plans = [
   {
@@ -49,11 +44,14 @@ const plans = [
   }
 ];
 
-// URLs fictícios das lojas (troque pelos reais se precisar)
-const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.auraapp";
-const APP_STORE_URL = "https://apps.apple.com/app/id1234567890";
-
 export function PricingPlans() {
+  const scrollToDownloads = () => {
+    const heroSection = document.querySelector('section.pt-20');
+    if (heroSection) {
+      heroSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-24 bg-muted">
       <div className="container">
@@ -84,29 +82,12 @@ export function PricingPlans() {
                   </li>
                 ))}
               </ul>
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <button 
-                    type="button" 
-                    className={`w-full py-3 rounded-lg text-lg font-semibold transition-colors duration-200 flex items-center justify-center ${plan.button.style}`}
-                  >
-                    {plan.button.text}
-                    <ChevronDown className="w-5 h-5 ml-2" />
-                  </button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-56">
-                  <DropdownMenuItem asChild>
-                    <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                      <img src="/lovable-uploads/fda67013-3c2d-4afe-8c1b-83fbd4c967c8.png" alt="Disponível no Google Play" className="h-8" />
-                    </a>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem asChild>
-                    <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                      <img src="/lovable-uploads/21e74c41-69d5-46f9-aa51-c257dc13c867.png" alt="Disponível na App Store" className="h-8" />
-                    </a>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
+              <button 
+                onClick={scrollToDownloads}
+                className={`w-full py-3 rounded-lg text-lg font-semibold transition-colors duration-200 ${plan.button.style}`}
+              >
+                {plan.button.text}
+              </button>
             </div>
           ))}
         </div>
