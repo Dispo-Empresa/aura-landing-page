@@ -1,4 +1,6 @@
 
+import React from 'react';
+
 export function Hero() {
   return (
     <section className="pt-20 pb-16 md:pt-28 md:pb-24">
@@ -13,17 +15,25 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#"
-              className="w-full sm:w-auto"
+              className="w-full sm:w-auto inline-flex justify-center"
               aria-label="Baixar para Android"
             >
-              <img src="/lovable-uploads/google-play.png" alt="Disponível no Google Play" className="h-14 w-auto" />
+              <img 
+                src="/lovable-uploads/google-play.png" 
+                alt="Disponível no Google Play" 
+                className="h-14 w-auto max-w-[200px]" 
+              />
             </a>
             <a
               href="#"
-              className="w-full sm:w-auto"
+              className="w-full sm:w-auto inline-flex justify-center"
               aria-label="Baixar para iOS"
             >
-              <img src="/lovable-uploads/ios.png" alt="Disponível na App Store" className="h-16 w-auto" />
+              <img 
+                src="/lovable-uploads/ios.png" 
+                alt="Disponível na App Store" 
+                className="h-16 w-auto max-w-[200px]" 
+              />
             </a>
           </div>
         </div>
