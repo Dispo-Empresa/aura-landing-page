@@ -16,14 +16,14 @@ export function Hero() {
               className="w-full sm:w-auto"
               aria-label="Baixar para Android"
             >
-              <img src="/lovable-uploads/fda67013-3c2d-4afe-8c1b-83fbd4c967c8.png" alt="Disponível no Google Play" className="h-16 w-auto" />
+              <img src="/lovable-uploads/google-play.png" alt="Disponível no Google Play" className="h-14 w-auto" />
             </a>
             <a
               href="#"
               className="w-full sm:w-auto"
               aria-label="Baixar para iOS"
             >
-              <img src="/lovable-uploads/21e74c41-69d5-46f9-aa51-c257dc13c867.png" alt="Disponível na App Store" className="h-16 w-auto" />
+              <img src="/lovable-uploads/ios.png" alt="Disponível na App Store" className="h-16 w-auto" />
             </a>
           </div>
         </div>
