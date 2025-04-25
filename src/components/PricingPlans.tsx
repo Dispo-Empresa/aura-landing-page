@@ -1,5 +1,6 @@
 
 import { Check, X } from "lucide-react";
+import { useState } from "react";
 
 const plans = [
   {
@@ -45,33 +46,37 @@ const plans = [
 ];
 
 export function PricingPlans() {
-  const scrollToDownloads = () => {
-    const heroSection = document.querySelector('section.pt-20');
-    if (heroSection) {
-      heroSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const [showDownloadOptions, setShowDownloadOptions] = useState(false);
+  const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.auraapp";
+  const APP_STORE_URL = "https://apps.apple.com/app/id1234567890";
+
+  const handleButtonClick = (plan) => {
+    setShowDownloadOptions(true);
   };
 
   return (
     <section className="py-24 bg-muted">
       <div className="container">
-        <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-8">
+        <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-4">
           Simples para começar. Completo para crescer.
         </h2>
+        <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
+          Escolha o plano que melhor se adapta ao seu momento e migre conforme sua barbearia cresce.
+        </p>
         <div className="flex flex-col md:flex-row gap-8 justify-center">
           {plans.map((plan, idx) => (
             <div
               key={plan.title}
-              className={`flex-1 bg-card dark:glass rounded-2xl shadow-lg p-8 flex flex-col items-center border border-border/50 dark:border-white/10 ${idx === 1 ? "md:scale-105" : ""}`}
+              className={`flex-1 bg-card rounded-2xl shadow-lg p-8 flex flex-col items-center border border-border/50 dark:border-white/10 ${idx === 1 ? "md:scale-105" : ""}`}
             >
               <h3 className="text-2xl font-medium mb-1 font-outfit">{plan.title}</h3>
-              <div className="text-3xl font-bold mb-1">{plan.price}</div>
-              <div className="text-muted-foreground mb-4">{plan.subtitle}</div>
-              <ul className="w-full mb-6">
+              <div className="text-3xl font-bold mb-2">{plan.price}</div>
+              <div className="text-muted-foreground mb-6">{plan.subtitle}</div>
+              <ul className="w-full mb-8">
                 {plan.features.map((feat) => (
                   <li
                     key={feat.label}
-                    className={`flex items-center gap-2 py-1 text-base ${feat.included ? "text-foreground" : "text-muted-foreground/60 line-through"}`}
+                    className={`flex items-center gap-2 py-2 text-base ${feat.included ? "text-foreground" : "text-muted-foreground/60 line-through"}`}
                   >
                     {feat.included ? (
                       <Check className="w-5 h-5 text-[#34C759]" />
@@ -83,15 +88,42 @@ export function PricingPlans() {
                 ))}
               </ul>
               <button 
-                onClick={scrollToDownloads}
-                className={`w-full py-3 rounded-lg text-lg font-semibold transition-colors duration-200 ${plan.button.style}`}
+                onClick={() => handleButtonClick(plan)}
+                className={`w-full py-3 rounded-lg text-lg font-medium transition-colors duration-200 ${plan.button.style}`}
               >
                 {plan.button.text}
               </button>
             </div>
           ))}
         </div>
-        <div className="text-center text-muted-foreground text-sm mt-6">
+        
+        {showDownloadOptions && (
+          <div className="mt-12 flex flex-col items-center">
+            <h3 className="text-xl font-medium mb-6">Baixe o app e comece agora</h3>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                href={GOOGLE_PLAY_URL}
+                className="w-full sm:w-auto inline-flex justify-center"
+                aria-label="Baixar para Android"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/lovable-uploads/google-play.png" alt="Disponível no Google Play" className="h-14 w-auto max-w-[200px]" />
+              </a>
+              <a
+                href={APP_STORE_URL}
+                className="w-full sm:w-auto inline-flex justify-center"
+                aria-label="Baixar para iOS"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/lovable-uploads/ios.png" alt="Disponível na App Store" className="h-16 w-auto max-w-[200px]" />
+              </a>
+            </div>
+          </div>
+        )}
+        
+        <div className="text-center text-muted-foreground text-sm mt-8">
           Você pode migrar para o Pro a qualquer momento, sem perder seus dados.
         </div>
       </div>
