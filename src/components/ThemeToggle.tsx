@@ -1,28 +1,19 @@
 
 import { Moon, Sun } from "lucide-react";
-import { useTheme } from "@/hooks/useTheme";
 import { Button } from "@/components/ui/button";
 
+// Este componente está mantido apenas para referência, 
+// mas não é mais usado pois o tema dark agora é fixo.
 export function ThemeToggle() {
-  const [theme, setTheme] = useTheme();
-
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
-
   return (
     <Button
-      aria-label={theme === "dark" ? "Mudar para modo claro" : "Mudar para modo escuro"}
+      aria-label="Tema escuro fixo"
       variant="ghost"
       size="icon"
       className="ml-2"
-      onClick={toggleTheme}
+      disabled
     >
-      {theme === "dark" ? (
-        <Sun className="h-5 w-5" />
-      ) : (
-        <Moon className="h-5 w-5" />
-      )}
+      <Moon className="h-5 w-5" />
     </Button>
   );
 }

@@ -1,13 +1,7 @@
 
-import { useTheme } from "@/hooks/useTheme";
-
 export function Logo() {
-  const [theme] = useTheme();
-  
-  // Definir o logo baseado no tema atual
-  const logoSrc = theme === "dark" 
-    ? "/lovable-uploads/aura-logo-light.png" 
-    : "/lovable-uploads/aura-logo-dark.png";
+  // Tema é sempre dark agora
+  const logoSrc = "/lovable-uploads/aura-logo-light.png";
   
   return (
     <div className="text-[#2A98D2] font-outfit font-bold text-2xl flex items-center">

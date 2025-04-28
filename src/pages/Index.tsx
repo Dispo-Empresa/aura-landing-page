@@ -7,9 +7,6 @@ import { AppMobileDesktopMockups } from "@/components/AppMobileDesktopMockups";
 import { ShowcaseMockups } from "@/components/ShowcaseMockups";
 import { PricingPlans } from "@/components/PricingPlans";
 import { Logo } from "@/components/Logo";
-import { Button } from "@/components/ui/button";
-import { Smartphone, Monitor } from "lucide-react";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.auraapp";
 const APP_STORE_URL = "https://apps.apple.com/app/id1234567890";
@@ -20,7 +17,7 @@ const Index = () => {
       <header className="py-6 border-b">
         <div className="container flex items-center justify-between">
           <Logo />
-          <ThemeToggle />
+          {/* ThemeToggle removido */}
         </div>
       </header>
 
@@ -32,7 +29,8 @@ const Index = () => {
       <AppMobileDesktopMockups />
       <FAQ />
       
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[#0D3B66] opacity-20 blur-3xl -z-10 rounded-full transform translate-y-1/4 scale-125"></div>
         <div className="container text-center px-4">
           <h2 className="text-3xl md:text-4xl font-outfit font-semibold mb-8">
             Pronto para simplificar a gestão da sua barbearia?
