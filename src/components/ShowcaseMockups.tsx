@@ -1,7 +1,8 @@
 
 export function ShowcaseMockups() {
   return (
-    <section className="py-20 bg-white/0 relative overflow-x-hidden">
+    <section className="py-20 bg-white/0 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[#0D3B66] opacity-15 blur-3xl -z-10 rounded-full transform translate-x-1/3 scale-125"></div>
       <div className="container flex flex-col md:flex-row items-center justify-center gap-12">
         <div className="flex-1 flex flex-col items-center md:items-start">
           <h2 className="text-3xl md:text-4xl font-outfit font-semibold mb-4 text-center md:text-left">

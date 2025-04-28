@@ -3,7 +3,8 @@ import React from 'react';
 
 export function Hero() {
   return (
-    <section className="pt-20 pb-16 md:pt-28 md:pb-24">
+    <section className="pt-20 pb-16 md:pt-28 md:pb-24 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[#0D3B66] opacity-10 blur-3xl -z-10 rounded-full transform translate-y-1/4 scale-125"></div>
       <div className="container">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-outfit font-bold leading-tight mb-6">

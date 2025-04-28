@@ -26,7 +26,8 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section className="py-24 bg-muted">
+    <section className="py-24 bg-muted relative overflow-hidden">
+      <div className="absolute inset-0 bg-[#0D3B66] opacity-10 blur-3xl -z-10 rounded-full transform translate-y-1/4 scale-125"></div>
       <div className="container">
         <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-12">
           Tudo que você precisa para uma gestão tranquila
@@ -47,4 +48,3 @@ export function Benefits() {
     </section>
   );
 }
-
