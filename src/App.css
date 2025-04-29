@@ -45,3 +45,12 @@
 html {
   @apply dark;
 }
+
+/* Forçar modo escuro */
+:root {
+  color-scheme: dark !important;
+}
+
+body {
+  @apply dark bg-background text-foreground;
+}

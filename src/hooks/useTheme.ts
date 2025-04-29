@@ -23,6 +23,10 @@ export function useTheme(): [Theme, (theme: Theme) => void] {
     
     // Salvar preferência no localStorage
     localStorage.setItem(THEME_LOCALSTORAGE_KEY, "dark");
+    
+    // Forçar atualização de cores CSS
+    document.body.classList.add("dark-theme");
+    document.body.classList.remove("light-theme");
   }, []);
 
   // Esta função é mantida para compatibilidade, mas não faz nada

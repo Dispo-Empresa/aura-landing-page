@@ -79,6 +79,11 @@
   html {
     @apply dark;
   }
+
+  /* Forçar o tema escuro sem depender de classes */
+  :root {
+    color-scheme: dark !important;
+  }
 }
 
 @layer utilities {
