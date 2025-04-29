@@ -2,38 +2,37 @@
 import { useCallback, useEffect, useState } from "react";
 
 // 'light' | 'dark'
-export type Theme = "dark";
+export type Theme = "light" | "dark";
 
 const THEME_LOCALSTORAGE_KEY = "aura-theme";
 
 export function useTheme(): [Theme, (theme: Theme) => void] {
-  const [theme] = useState<Theme>("dark");
+  const [theme, setThemeState] = useState<Theme>(() => {
+    // Busca tema preferido salvo
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem(THEME_LOCALSTORAGE_KEY) as Theme | null;
+      if (stored === "dark" || stored === "light") return stored;
+    }
+    return "dark"; // AGORA dark é o padrão!
+  });
 
   useEffect(() => {
-    // Forçar modo escuro aplicando a classe 'dark' ao elemento HTML
+    // Aplica/remover classe 'dark' no <html>
     const htmlEl = document.documentElement;
-    
-    // Remover qualquer classe 'light' se presente
-    htmlEl.classList.remove("light");
-    
-    // Garantir que a classe 'dark' esteja sempre aplicada
-    if (!htmlEl.classList.contains("dark")) {
+    if (theme === "dark") {
       htmlEl.classList.add("dark");
+    } else {
+      htmlEl.classList.remove("dark");
     }
-    
-    // Salvar preferência no localStorage
-    localStorage.setItem(THEME_LOCALSTORAGE_KEY, "dark");
-    
-    // Forçar atualização de cores CSS
-    document.body.classList.add("dark-theme");
-    document.body.classList.remove("light-theme");
-  }, []);
+    // Salva opção
+    localStorage.setItem(THEME_LOCALSTORAGE_KEY, theme);
+  }, [theme]);
 
-  // Esta função é mantida para compatibilidade, mas não faz nada
-  // já que o tema está sempre fixo como "dark"
-  const setTheme = useCallback((_newTheme: Theme) => {
-    // O tema é fixo como "dark", então esta é uma operação vazia
+  // Para alterar o tema a partir do componente
+  const setTheme = useCallback((newTheme: Theme) => {
+    setThemeState(newTheme);
   }, []);
 
   return [theme, setTheme];
 }
+

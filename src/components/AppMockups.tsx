@@ -3,8 +3,7 @@ import { Smartphone } from "lucide-react";
 
 export function AppMockups() {
   return (
-    <section className="py-24 overflow-hidden relative">
-      <div className="absolute inset-0 bg-[#0D3B66] opacity-20 blur-3xl -z-10 rounded-full transform -translate-y-1/4 scale-125"></div>
+    <section className="py-24 overflow-hidden">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
@@ -29,3 +28,4 @@ export function AppMockups() {
     </section>
   );
 }
+

@@ -1,4 +1,3 @@
-
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -40,17 +39,4 @@
 
 .read-the-docs {
   color: #888;
-}
-
-html {
-  @apply dark;
-}
-
-/* Forçar modo escuro */
-:root {
-  color-scheme: dark !important;
-}
-
-body {
-  @apply dark bg-background text-foreground;
 }

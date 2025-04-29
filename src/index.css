@@ -74,16 +74,6 @@
     @apply bg-background text-foreground font-inter;
     transition: background 0.2s, color 0.2s;
   }
-  
-  /* Forçar o tema escuro sempre */
-  html {
-    @apply dark;
-  }
-
-  /* Forçar o tema escuro sem depender de classes */
-  :root {
-    color-scheme: dark !important;
-  }
 }
 
 @layer utilities {
