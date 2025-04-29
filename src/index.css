@@ -74,6 +74,11 @@
     @apply bg-background text-foreground font-inter;
     transition: background 0.2s, color 0.2s;
   }
+  
+  /* Always force dark mode */
+  html {
+    @apply dark;
+  }
 }
 
 @layer utilities {

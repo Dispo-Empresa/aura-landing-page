@@ -1,6 +1,6 @@
 
 export function Logo() {
-  // Tema é sempre dark agora
+  // Always use the light logo for dark theme
   const logoSrc = "/lovable-uploads/aura-logo-light.png";
   
   return (
