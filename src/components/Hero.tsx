@@ -6,7 +6,7 @@ export function Hero() {
     <section className="py-20 md:py-28 relative overflow-hidden">
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-2/3 w-[600px] h-[600px] bg-[#2A98D2]/10 rounded-full blur-3xl opacity-70"></div>
       <div className="container">
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto relative z-10">
           <div className="flex items-center justify-center gap-2 mb-6">
             <Scissors className="w-5 h-5 text-[#2A98D2]" />
             <span className="text-sm uppercase tracking-wider text-[#2A98D2] font-medium">Feito para barbeiros</span>
