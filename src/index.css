@@ -75,7 +75,7 @@
     transition: background 0.2s, color 0.2s;
   }
   
-  /* Always force dark mode */
+  /* Forçar o tema escuro sempre */
   html {
     @apply dark;
   }

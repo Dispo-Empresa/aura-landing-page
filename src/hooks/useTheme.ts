@@ -10,25 +10,25 @@ export function useTheme(): [Theme, (theme: Theme) => void] {
   const [theme] = useState<Theme>("dark");
 
   useEffect(() => {
-    // Force dark mode by always applying 'dark' class to the HTML element
+    // Forçar modo escuro aplicando a classe 'dark' ao elemento HTML
     const htmlEl = document.documentElement;
     
-    // Remove any existing 'light' class if present
+    // Remover qualquer classe 'light' se presente
     htmlEl.classList.remove("light");
     
-    // Always ensure 'dark' class is applied
+    // Garantir que a classe 'dark' esteja sempre aplicada
     if (!htmlEl.classList.contains("dark")) {
       htmlEl.classList.add("dark");
     }
     
-    // Save preference in localStorage
+    // Salvar preferência no localStorage
     localStorage.setItem(THEME_LOCALSTORAGE_KEY, "dark");
   }, []);
 
-  // This function is maintained for compatibility but does nothing
-  // since the theme is always fixed to "dark"
+  // Esta função é mantida para compatibilidade, mas não faz nada
+  // já que o tema está sempre fixo como "dark"
   const setTheme = useCallback((_newTheme: Theme) => {
-    // Theme is fixed as "dark", so this is a no-op
+    // O tema é fixo como "dark", então esta é uma operação vazia
   }, []);
 
   return [theme, setTheme];
