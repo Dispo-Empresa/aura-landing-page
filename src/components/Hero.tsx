@@ -3,8 +3,8 @@ import { Scissors } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section className="pt-20 pb-16 md:pt-28 md:pb-24 relative overflow-hidden bg-background">
-      <div className="absolute inset-0 bg-[#0D3B66] opacity-10 blur-3xl -z-10 rounded-full transform translate-y-1/4 scale-125"></div>
+    <section className="py-20 md:py-28 relative overflow-hidden">
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-2/3 w-[600px] h-[600px] bg-[#2A98D2]/10 rounded-full blur-3xl opacity-70"></div>
       <div className="container">
         <div className="text-center max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-2 mb-6">
