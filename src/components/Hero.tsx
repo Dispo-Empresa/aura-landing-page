@@ -41,8 +41,36 @@ export function Hero() {
               />
             </a>
           </div>
+          
+          {/* QR Code para desktop com divisor "Ou" - visível apenas em desktop */}
+          <div className="hidden md:flex flex-col items-center mt-6 animate-fade-in" style={{ animationDelay: "400ms" }}>
+            <div className="flex items-center w-full my-4">
+              <div className="flex-grow h-px bg-border"></div>
+              <span className="px-4 text-sm text-muted-foreground font-medium">Ou</span>
+              <div className="flex-grow h-px bg-border"></div>
+            </div>
+            
+            <p className="text-sm text-muted-foreground mb-3">Escaneie o QR code para baixar o app</p>
+            
+            <div className="bg-white p-2 rounded-lg shadow-md">
+              {/* QR code placeholder - Em um ambiente real, este seria um QR code que redireciona para a loja de apps */}
+              <div className="w-32 h-32 grid grid-cols-5 grid-rows-5 gap-0.5">
+                {[...Array(25)].map((_, i) => (
+                  <div 
+                    key={i} 
+                    className={`${
+                      // Padrão simplificado de QR code para visualização
+                      [0,1,2,3,4,5,9,10,14,15,19,20,21,22,23,24].includes(i) ? 
+                      'bg-black' : Math.random() > 0.7 ? 'bg-black' : 'bg-transparent'
+                    }`}
+                  ></div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      
       <div className="container flex flex-col md:flex-row items-center justify-center gap-14 mt-16 md:mt-24">
         <div className="flex-1 flex flex-col items-center md:items-start animate-fade-in" style={{ animationDelay: "400ms" }}>
           <h2 className="text-3xl md:text-4xl font-outfit font-semibold mb-4 text-center md:text-left text-foreground">
