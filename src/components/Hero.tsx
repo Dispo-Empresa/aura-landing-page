@@ -53,19 +53,11 @@ export function Hero() {
             <p className="text-sm text-muted-foreground mb-3">Escaneie o QR code para baixar o app</p>
             
             <div className="bg-white p-2 rounded-lg shadow-md">
-              {/* QR code placeholder - Em um ambiente real, este seria um QR code que redireciona para a loja de apps */}
-              <div className="w-32 h-32 grid grid-cols-5 grid-rows-5 gap-0.5">
-                {[...Array(25)].map((_, i) => (
-                  <div 
-                    key={i} 
-                    className={`${
-                      // Padrão simplificado de QR code para visualização
-                      [0,1,2,3,4,5,9,10,14,15,19,20,21,22,23,24].includes(i) ? 
-                      'bg-black' : Math.random() > 0.7 ? 'bg-black' : 'bg-transparent'
-                    }`}
-                  ></div>
-                ))}
-              </div>
+              <img 
+                src="/lovable-uploads/0c8747b0-4182-437f-b22f-5446c9a6f9bb.png" 
+                alt="QR Code para download do app" 
+                className="w-32 h-32" 
+              />
             </div>
           </div>
         </div>
