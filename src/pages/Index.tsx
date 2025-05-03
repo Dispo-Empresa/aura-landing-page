@@ -81,7 +81,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/0c8747b0-4182-437f-b22f-5446c9a6f9bb.png" 
                 alt="QR Code para download do app" 
-                className="w-48 h-48" 
+                className="w-32 h-32" 
               />
             </div>
           </div>
