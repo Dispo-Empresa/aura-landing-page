@@ -96,6 +96,12 @@ const Index = () => {
               <p className="text-sm text-muted-foreground mt-2">
                 Organize sua barbearia. Simplifique sua vida.
               </p>
+              <p className="text-sm text-muted-foreground mt-2 flex items-center">
+                <span>Um produto da</span>
+                <span className="font-medium text-foreground ml-1">Dispo</span>
+                <span className="ml-1">•</span>
+                <span className="ml-1 text-muted-foreground">Tecnologia para pequenos negócios</span>
+              </p>
             </div>
             
             <div className="flex flex-wrap justify-center gap-6">
@@ -113,7 +119,7 @@ const Index = () => {
           
           <div className="border-t border-border/50 pt-6 flex flex-col-reverse md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground text-center md:text-left">
-              © 2025 Aura. Todos os direitos reservados.
+              © 2025 Aura, um produto da Dispo. Todos os direitos reservados.
             </p>
             
             <div className="flex items-center gap-4">
