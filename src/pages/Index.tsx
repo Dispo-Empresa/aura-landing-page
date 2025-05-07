@@ -8,11 +8,12 @@ import { ShowcaseMockups } from "@/components/ShowcaseMockups";
 import { PricingPlans } from "@/components/PricingPlans";
 import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/button";
-import { Smartphone, Monitor, Scissors } from "lucide-react";
+import { Smartphone, Monitor, Scissors, ExternalLink } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.auraapp";
 const APP_STORE_URL = "https://apps.apple.com/app/id1234567890";
+const DISPO_WEBSITE_URL = "https://dispo.com.br";
 
 const Index = () => {
   return (
@@ -96,12 +97,23 @@ const Index = () => {
               <p className="text-sm text-muted-foreground mt-2">
                 Organize sua barbearia. Simplifique sua vida.
               </p>
-              <p className="text-sm text-muted-foreground mt-2 flex items-center">
-                <span>Um produto da</span>
-                <span className="font-medium text-foreground ml-1">Dispo</span>
-                <span className="ml-1">•</span>
-                <span className="ml-1 text-muted-foreground">Tecnologia para pequenos negócios</span>
-              </p>
+              <div className="flex flex-col md:flex-row items-center md:items-start gap-2 mt-2">
+                <p className="text-sm text-muted-foreground flex items-center">
+                  <span>Um produto da</span>
+                  <span className="font-medium text-foreground ml-1">Dispo</span>
+                  <span className="ml-1">•</span>
+                  <span className="ml-1 text-muted-foreground">Tecnologia para pequenos negócios</span>
+                </p>
+                <a 
+                  href={DISPO_WEBSITE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer" 
+                  className="text-sm inline-flex items-center text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <span>Conheça a Dispo</span>
+                  <ExternalLink className="ml-1 w-3 h-3" />
+                </a>
+              </div>
             </div>
             
             <div className="flex flex-wrap justify-center gap-6">
