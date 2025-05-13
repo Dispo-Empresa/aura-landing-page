@@ -3,7 +3,7 @@ import { Check, X } from "lucide-react";
 
 const plans = [
   {
-    title: "Plano Grátis",
+    title: "Plano Gratuito",
     price: "R$ 0",
     subtitle: "Perfeito para começar seu controle",
     features: [
@@ -23,7 +23,7 @@ const plans = [
     }
   },
   {
-    title: "Plano Pro",
+    title: "Plano Premium",
     price: "A partir de R$ 29/mês",
     subtitle: "Para barbearias que querem crescer",
     features: [
@@ -94,7 +94,7 @@ export function PricingPlans() {
           ))}
         </div>
         <div className="text-center text-muted-foreground text-sm mt-6">
-          Você pode migrar para o Pro a qualquer momento, sem perder seus dados.
+          Você pode migrar para o Premium a qualquer momento, sem perder seus dados.
         </div>
       </div>
     </section>
