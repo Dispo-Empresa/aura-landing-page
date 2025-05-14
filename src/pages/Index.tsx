@@ -6,6 +6,7 @@ import { AppMockups } from "@/components/AppMockups";
 import { AppMobileDesktopMockups } from "@/components/AppMobileDesktopMockups";
 import { ShowcaseMockups } from "@/components/ShowcaseMockups";
 import { PricingPlans } from "@/components/PricingPlans";
+import { ChatShowcase } from "@/components/ChatShowcase";
 import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { Smartphone, Monitor, Scissors, ExternalLink } from "lucide-react";
@@ -13,7 +14,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 
 const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.auraapp";
 const APP_STORE_URL = "https://apps.apple.com/app/id1234567890";
-const DISPO_WEBSITE_URL = "https://dispo.com.br";
+const DISPO_WEBSITE_URL = "https://www.dispo.net.br/";
 
 const Index = () => {
   return (
@@ -27,6 +28,7 @@ const Index = () => {
       <Hero />
       {/*<ShowcaseMockups />*/}
       <Benefits />
+      <ChatShowcase />
       <PricingPlans />
       <AppMockups />
       <AppMobileDesktopMockups />
