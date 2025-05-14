@@ -24,22 +24,22 @@ export function ChatShowcase() {
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
-          {/* Desktop chat mockup - usando a imagem enviada */}
+          {/* Desktop chat mockup */}
           <div className="w-full max-w-3xl mx-auto shadow-xl rounded-xl overflow-hidden">
             <AspectRatio ratio={16/9}>
               <img 
-                src="/lovable-uploads/7535625b-c93d-47df-879b-b9c878e466d6.png" 
+                src="/lovable-uploads/9d061049-621d-4456-8a52-6bf35caa6d89.png" 
                 alt="Chat de agendamentos no desktop" 
                 className="w-full h-full object-cover object-center"
               />
             </AspectRatio>
           </div>
           
-          {/* Mobile chat mockup - usando a imagem enviada */}
+          {/* Mobile chat mockup */}
           <div className="max-w-[280px] mx-auto shadow-xl rounded-3xl overflow-hidden">
             <AspectRatio ratio={9/16}>
               <img 
-                src="/lovable-uploads/8022794d-3d7c-4b2b-bace-207c1c4da599.png" 
+                src="/lovable-uploads/63a6a9b3-4037-454c-aafb-e38fd5e14e31.png" 
                 alt="Chat de agendamentos no celular" 
                 className="w-full h-full object-cover object-center"
               />
