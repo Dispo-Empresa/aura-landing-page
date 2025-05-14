@@ -18,15 +18,15 @@ export function ChatShowcase() {
           Chat de agendamentos simplificado
         </h2>
         
-        <p className="text-lg text-muted-foreground mb-16 max-w-2xl mx-auto text-center">
+        <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto text-center">
           Seus clientes podem agendar horários facilmente através de uma interface de chat intuitiva, 
           tanto no desktop quanto no celular.
         </p>
         
-        {/* Layout com imagem desktop maior e celular ao lado */}
-        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center max-w-6xl mx-auto">
-          {/* Desktop chat mockup - versão maior */}
-          <div className="w-full lg:w-2/3 xl:w-3/4 shadow-xl rounded-xl overflow-hidden">
+        {/* Layout com imagens centralizadas e equilibradas */}
+        <div className="flex flex-col lg:flex-row gap-6 items-center justify-center max-w-6xl mx-auto">
+          {/* Desktop chat mockup */}
+          <div className="w-full lg:w-3/5 shadow-xl rounded-xl overflow-hidden border border-border/20">
             <AspectRatio ratio={16/9}>
               <img 
                 src="/lovable-uploads/9d061049-621d-4456-8a52-6bf35caa6d89.png" 
@@ -36,9 +36,9 @@ export function ChatShowcase() {
             </AspectRatio>
           </div>
           
-          {/* Mobile chat mockup */}
-          <div className="w-full lg:w-1/3 xl:w-1/4 max-w-[280px] shadow-xl rounded-3xl overflow-hidden">
-            <AspectRatio ratio={9/16}>
+          {/* Mobile chat mockup - tamanho aumentado proporcionalmente */}
+          <div className="w-full max-w-[320px] lg:w-2/5 shadow-xl rounded-3xl overflow-hidden border border-border/20">
+            <AspectRatio ratio={9/19}>
               <img 
                 src="/lovable-uploads/63a6a9b3-4037-454c-aafb-e38fd5e14e31.png" 
                 alt="Chat de agendamentos no celular" 
