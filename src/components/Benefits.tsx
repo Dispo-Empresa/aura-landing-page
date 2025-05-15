@@ -1,5 +1,5 @@
 
-import { Calendar, Users, Smartphone, Clock, MessageSquare, MessageCircle } from "lucide-react";
+import { Calendar, Users, Smartphone, Clock, MessageCircle } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const benefits = [
@@ -46,22 +46,22 @@ export function Benefits() {
           {benefits.map((benefit) => (
             <div
               key={benefit.title}
-              className={`flex flex-col items-center text-center p-6 bg-white dark:bg-card rounded-lg shadow-md hover:shadow-lg transition-all ${
+              className={`flex flex-col items-center text-center p-6 bg-white dark:bg-card rounded-lg shadow-md hover:shadow-lg transition-all relative ${
                 benefit.premium 
                   ? "border-2 border-[#34C759]" 
                   : "border border-border/50 dark:border-white/10"
               }`}
             >
+              {benefit.premium && (
+                <Badge className="bg-[#34C759]/20 border border-[#34C759] text-[#34C759]">
+                  Exclusivo do plano premium
+                </Badge>
+              )}
               <div className="relative">
                 <benefit.icon className="w-12 h-12 text-[#2A98D2] mb-4" />
               </div>
-              <div className="flex items-center gap-2 mb-2">
+              <div className="mb-2">
                 <h3 className="text-xl font-outfit font-medium">{benefit.title}</h3>
-                {benefit.premium && (
-                  <Badge className="bg-[#34C759]">
-                    Premium
-                  </Badge>
-                )}
               </div>
               <p className="text-muted-foreground">{benefit.description}</p>
             </div>

@@ -43,7 +43,7 @@ const plans = [
       { label: "Suporte prioritário", included: true },
     ],
     button: {
-      text: "Conheça o Pro",
+      text: "Conheça o Premium",
       href: "#",
       style: "bg-[#34C759] hover:bg-[#34C759]/90 text-white"
     }
@@ -74,7 +74,7 @@ export function PricingPlans() {
               {idx === 1 && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#34C759] text-white text-sm font-medium py-1 px-3 rounded-full flex items-center gap-1">
                   <BadgeDollarSign className="w-4 h-4" />
-                  <span>Aproveite enquanto o preço não aumenta!</span>
+                  <span>Aproveite enquanto o preço não é alterado!</span>
                 </div>
               )}
               

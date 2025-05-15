@@ -11,16 +11,14 @@ export function ChatShowcase() {
     <section className="py-20 md:py-28 bg-card/50">
       <div className="container px-4">
         <div className="flex items-center justify-center gap-2 mb-6">
-          <MessageCircle className="w-5 h-5 text-[#2A98D2]" />
-          <span className="text-sm uppercase tracking-wider text-[#2A98D2] font-medium">Experiência integrada</span>
+          <Badge className="bg-[#34C759]/20 border border-[#34C759] text-[#34C759]">
+            Exclusivo do plano premium
+          </Badge>
         </div>
         
-        <div className="flex items-center justify-center gap-2 mb-2">
-          <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center">
-            Chat de agendamentos simplificado
-          </h2>
-          <Badge className="bg-[#34C759] text-white">Premium</Badge>
-        </div>
+        <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-2">
+          Chat de agendamentos simplificado
+        </h2>
         
         <div className="max-w-2xl mx-auto text-center mb-16">
           <p className="text-lg text-muted-foreground">
@@ -34,10 +32,10 @@ export function ChatShowcase() {
           <p className="mt-2 text-muted-foreground">Seus clientes não precisam instalar nada - funciona direto no navegador!</p>
         </div>
         
-        {/* Layout com imagem desktop e celular lado a lado */}
+        {/* Layout com imagem desktop maior e celular ao lado */}
         <div className="flex flex-col lg:flex-row gap-10 items-center justify-center max-w-6xl mx-auto">
           {/* Desktop chat mockup - versão maior */}
-          <div className="w-full lg:w-3/5 shadow-lg rounded-xl border border-border/50 overflow-hidden">
+          <div className="w-full lg:w-2/3 xl:w-3/4 shadow-xl rounded-xl overflow-hidden">
             <AspectRatio ratio={16/9}>
               <img 
                 src="/lovable-uploads/9d061049-621d-4456-8a52-6bf35caa6d89.png" 
@@ -48,8 +46,8 @@ export function ChatShowcase() {
           </div>
           
           {/* Mobile chat mockup */}
-          <div className="w-full lg:w-2/5 max-w-[320px] shadow-lg rounded-3xl border border-border/50 overflow-hidden">
-            <AspectRatio ratio={9/19}>
+          <div className="w-full lg:w-1/3 xl:w-1/4 max-w-[280px] shadow-xl rounded-3xl overflow-hidden">
+            <AspectRatio ratio={9/16}>
               <img 
                 src="/lovable-uploads/63a6a9b3-4037-454c-aafb-e38fd5e14e31.png" 
                 alt="Chat de agendamentos no celular" 
@@ -62,7 +60,6 @@ export function ChatShowcase() {
         <div className="text-center mt-12">
           <p className="text-lg font-medium">Seus clientes vão adorar a praticidade!</p>
           <p className="text-muted-foreground mt-2">Interface intuitiva e amigável para qualquer dispositivo</p>
-          <Badge className="mt-4 bg-[#34C759]/20 border border-[#34C759] text-[#34C759]">Exclusivo do plano premium</Badge>
         </div>
       </div>
     </section>
