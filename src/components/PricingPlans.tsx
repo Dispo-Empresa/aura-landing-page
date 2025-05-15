@@ -1,5 +1,5 @@
 
-import { Check, X, Discount } from "lucide-react";
+import { Check, X, BadgeDollarSign } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const plans = [
@@ -73,7 +73,7 @@ export function PricingPlans() {
             >
               {idx === 1 && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#34C759] text-white text-sm font-medium py-1 px-3 rounded-full flex items-center gap-1">
-                  <Discount className="w-4 h-4" />
+                  <BadgeDollarSign className="w-4 h-4" />
                   <span>Aproveite enquanto o preço não aumenta!</span>
                 </div>
               )}

@@ -1,5 +1,5 @@
 
-import { Calendar, Users, Smartphone, Clock, MessageSquare, WhatsApp } from "lucide-react";
+import { Calendar, Users, Smartphone, Clock, MessageSquare, MessageCircle } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const benefits = [
@@ -28,7 +28,7 @@ const benefits = [
     premium: true
   },
   {
-    icon: WhatsApp,
+    icon: MessageCircle,
     title: "Integração com WhatsApp",
     description: "Clientes recebem mensagens de confirmação automáticas",
     premium: true

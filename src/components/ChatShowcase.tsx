@@ -1,7 +1,7 @@
 
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { MessageCircle, WhatsApp } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 export function ChatShowcase() {
   const isMobile = useIsMobile();
@@ -24,7 +24,7 @@ export function ChatShowcase() {
             tanto no desktop quanto no celular.
           </p>
           <div className="flex items-center justify-center gap-2 mt-4 text-[#34C759] font-medium">
-            <WhatsApp className="w-5 h-5" />
+            <MessageCircle className="w-5 h-5" />
             <span>Confirmações automáticas via WhatsApp</span>
           </div>
           <p className="mt-2 text-muted-foreground">Seus clientes não precisam instalar nada - funciona direto no navegador!</p>
