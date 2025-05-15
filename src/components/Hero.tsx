@@ -12,10 +12,10 @@ export function Hero() {
             <span className="text-sm uppercase tracking-wider text-[#2A98D2] font-medium">Feito para barbeiros</span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-outfit font-bold leading-tight mb-6 text-foreground animate-fade-in" style={{ animationDelay: "100ms" }}>
-            O app que organiza sua barbearia do seu jeito
+            Controle total da sua agenda, sem complicação
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-10 animate-fade-in" style={{ animationDelay: "200ms" }}>
-            Configure sua agenda do seu jeito, gerencie agendamentos e tenha total controle da sua barbearia. Comece grátis e cresça conforme sua necessidade.
+            Sua barbearia mais organizada e seus clientes mais satisfeitos. Agende, gerencie e cresça com o Aura.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "300ms" }}>
             <a
@@ -66,10 +66,10 @@ export function Hero() {
       <div className="container flex flex-col md:flex-row items-center justify-center gap-14 mt-16 md:mt-24">
         <div className="flex-1 flex flex-col items-center md:items-start animate-fade-in" style={{ animationDelay: "400ms" }}>
           <h2 className="text-3xl md:text-4xl font-outfit font-semibold mb-4 text-center md:text-left text-foreground">
-            Veja como é fácil controlar o seu dia a dia
+            Sua rotina completa em um só lugar
           </h2>
           <p className="text-lg text-muted-foreground mb-6 text-center md:text-left">
-            Os principais recursos, tudo ao alcance do seu toque: agenda flexível, visão clara dos horários, próximos agendamentos e alertas automáticos.
+            Tenha um resumo completo do seu dia como barbeiro: notificações, atalhos rápidos, dashboard com dados do dia, faturamento e próximos agendamentos, tudo ao alcance do seu toque.
           </p>
         </div>
         <div className="flex-1 flex flex-col gap-6 items-center relative animate-fade-in" style={{ animationDelay: "500ms" }}>
@@ -77,7 +77,7 @@ export function Hero() {
             {/* Celular grande (frontal) */}
             <img
               src="/lovable-uploads/8022794d-3d7c-4b2b-bace-207c1c4da599.png"
-              alt="Mockup do app - principal"
+              alt="Dashboard do app Aura - visão completa do dia"
               className="w-32 sm:w-40 md:w-56 rounded-2xl bg-transparent hover:scale-105 transition-transform duration-300"
               style={{ zIndex: 3 }}
             />

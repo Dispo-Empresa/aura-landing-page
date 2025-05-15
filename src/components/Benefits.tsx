@@ -1,26 +1,37 @@
 
-import { Calendar, Users, Smartphone, Clock } from "lucide-react";
+import { Calendar, Users, Smartphone, Clock, MessageSquare, WhatsApp } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 const benefits = [
   {
     icon: Calendar,
     title: "Agenda personalizada",
-    description: "Configure horários, folgas e férias do seu jeito"
+    description: "Configure horários, folgas e férias do seu jeito",
+    premium: false
   },
   {
     icon: Clock,
     title: "Intervalos flexíveis",
-    description: "Defina seus horários de almoço e pausas"
+    description: "Defina seus horários de almoço e pausas",
+    premium: false
   },
   {
     icon: Smartphone,
     title: "Link de agendamento",
-    description: "Compartilhe nas redes sociais para agendamentos automáticos"
+    description: "Compartilhe nas redes sociais para agendamentos automáticos",
+    premium: true
   },
   {
     icon: Users,
     title: "Múltiplos barbeiros",
-    description: "Adicione toda sua equipe no plano premium"
+    description: "Adicione toda sua equipe no plano premium",
+    premium: true
+  },
+  {
+    icon: WhatsApp,
+    title: "Integração com WhatsApp",
+    description: "Clientes recebem mensagens de confirmação automáticas",
+    premium: true
   }
 ];
 
@@ -31,13 +42,20 @@ export function Benefits() {
         <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-12">
           Tudo que você precisa para uma gestão tranquila
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit) => (
             <div
               key={benefit.title}
-              className="flex flex-col items-center text-center p-6 bg-white dark:bg-card rounded-lg shadow-sm transition-colors"
+              className="flex flex-col items-center text-center p-6 bg-white dark:bg-card rounded-lg shadow-md hover:shadow-lg transition-all border border-border/50 dark:border-white/10"
             >
-              <benefit.icon className="w-12 h-12 text-[#2A98D2] mb-4" />
+              <div className="relative">
+                <benefit.icon className="w-12 h-12 text-[#2A98D2] mb-4" />
+                {benefit.premium && (
+                  <Badge className="absolute -top-2 -right-6 bg-[#34C759]">
+                    Premium
+                  </Badge>
+                )}
+              </div>
               <h3 className="text-xl font-outfit font-medium mb-2">{benefit.title}</h3>
               <p className="text-muted-foreground">{benefit.description}</p>
             </div>
@@ -47,4 +65,3 @@ export function Benefits() {
     </section>
   );
 }
-
