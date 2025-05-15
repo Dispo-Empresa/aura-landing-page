@@ -20,16 +20,8 @@ const faqs = [
     answer: "Você pode cancelar, remarcar e ajustar seus horários a qualquer momento. O Aura gerencia conflitos e atualiza sua agenda com segurança."
   },
   {
-    question: "Preciso instalar algo no computador?",
-    answer: "Não, o Aura funciona direto pelo navegador ou pelo app no seu celular. Sem necessidade de instalações complicadas."
-  },
-  {
-    question: "E se eu já tiver agendamentos?",
-    answer: "Você pode importar seus agendamentos existentes facilmente para o Aura, sem perder nenhuma informação."
-  },
-  {
     question: "Como posso sugerir melhorias para o Aura?",
-    answer: "Envie suas ideias diretamente para o nosso suporte via WhatsApp: (11) 99999-9999."
+    answer: "Envie suas ideias diretamente para o nosso suporte via WhatsApp: "
   }
 ];
 
@@ -48,7 +40,21 @@ export function FAQ() {
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                {faq.answer}
+                {index === 3 ? (
+                  <div className="flex items-center gap-1">
+                    {faq.answer}
+                    <a 
+                      href="https://wa.me/5511999999999" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-[#34C759] font-medium hover:underline"
+                    >
+                      Clique aqui
+                    </a>
+                  </div>
+                ) : (
+                  faq.answer
+                )}
               </AccordionContent>
             </AccordionItem>
           ))}

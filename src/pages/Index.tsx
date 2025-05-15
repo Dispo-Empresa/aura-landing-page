@@ -25,7 +25,6 @@ const Index = () => {
       <Benefits />
       <ChatShowcase />
       <PricingPlans />
-      <AppMobileDesktopMockups />
       <FAQ />
       
       <section className="py-20 md:py-28 relative overflow-hidden">

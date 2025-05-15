@@ -2,6 +2,7 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { MessageCircle } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 export function ChatShowcase() {
   const isMobile = useIsMobile();
@@ -14,9 +15,12 @@ export function ChatShowcase() {
           <span className="text-sm uppercase tracking-wider text-[#2A98D2] font-medium">Experiência integrada</span>
         </div>
         
-        <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-6">
-          Chat de agendamentos simplificado
-        </h2>
+        <div className="flex items-center justify-center gap-2 mb-2">
+          <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center">
+            Chat de agendamentos simplificado
+          </h2>
+          <Badge className="bg-[#34C759] text-white">Premium</Badge>
+        </div>
         
         <div className="max-w-2xl mx-auto text-center mb-16">
           <p className="text-lg text-muted-foreground">
@@ -58,6 +62,7 @@ export function ChatShowcase() {
         <div className="text-center mt-12">
           <p className="text-lg font-medium">Seus clientes vão adorar a praticidade!</p>
           <p className="text-muted-foreground mt-2">Interface intuitiva e amigável para qualquer dispositivo</p>
+          <Badge className="mt-4 bg-[#34C759]/20 border border-[#34C759] text-[#34C759]">Exclusivo do plano premium</Badge>
         </div>
       </div>
     </section>
