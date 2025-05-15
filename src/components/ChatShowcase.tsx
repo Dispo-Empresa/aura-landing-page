@@ -12,15 +12,14 @@ export function ChatShowcase() {
       <div className="container px-4">
         <div className="flex items-center justify-center gap-2 mb-6">
           <MessageCircle className="w-5 h-5 text-[#2A98D2]" />
-          <span className="text-sm uppercase tracking-wider text-[#2A98D2] font-medium">Experiência integrada</span>
+          <Badge className="bg-[#34C759]/20 border border-[#34C759] text-[#34C759]">
+            Exclusivo do plano premium
+          </Badge>
         </div>
         
-        <div className="flex items-center justify-center gap-2 mb-2">
-          <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center">
-            Chat de agendamentos simplificado
-          </h2>
-          <Badge className="bg-[#34C759] text-white">Premium</Badge>
-        </div>
+        <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-2">
+          Chat de agendamentos simplificado
+        </h2>
         
         <div className="max-w-2xl mx-auto text-center mb-16">
           <p className="text-lg text-muted-foreground">
