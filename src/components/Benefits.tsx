@@ -48,16 +48,16 @@ export function Benefits() {
               key={benefit.title}
               className={`flex flex-col items-center text-center p-6 bg-white dark:bg-card rounded-lg shadow-md hover:shadow-lg transition-all relative ${
                 benefit.premium 
-                  ? "border-2 border-[#34C759]" 
+                  ? "border-[1px] border-[#34C759]" 
                   : "border border-border/50 dark:border-white/10"
               }`}
             >
               {benefit.premium && (
-                <Badge className="absolute top-0 -translate-y-1/2 bg-[#34C759]/20 border border-[#34C759] text-[#34C759] mx-auto">
+                <Badge className="absolute top-0 -translate-y-1/2 bg-[#34C759]/20 border border-[#34C759] text-[#34C759] mx-auto mt-5">
                   Exclusivo do plano premium
                 </Badge>
               )}
-              <div className="relative mt-4">
+              <div className="relative mt-6">
                 <benefit.icon className="w-12 h-12 text-[#2A98D2] mb-4" />
               </div>
               <div className="mb-2">
