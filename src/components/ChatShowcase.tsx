@@ -19,6 +19,9 @@ export function ChatShowcase() {
         <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-2">
           Chat de agendamentos simplificado
         </h2>
+        <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-2">
+          Chat de agendamentos simplificado
+        </h2>
         
         <div className="max-w-2xl mx-auto text-center mb-16">
           <p className="text-lg text-muted-foreground">
