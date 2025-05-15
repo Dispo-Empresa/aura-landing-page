@@ -53,11 +53,11 @@ export function Benefits() {
               }`}
             >
               {benefit.premium && (
-                <Badge className="bg-[#34C759]/20 border border-[#34C759] text-[#34C759]">
+                <Badge className="absolute top-0 -translate-y-1/2 bg-[#34C759]/20 border border-[#34C759] text-[#34C759] mx-auto">
                   Exclusivo do plano premium
                 </Badge>
               )}
-              <div className="relative">
+              <div className="relative mt-4">
                 <benefit.icon className="w-12 h-12 text-[#2A98D2] mb-4" />
               </div>
               <div className="mb-2">

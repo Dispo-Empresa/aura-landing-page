@@ -72,7 +72,7 @@ export function PricingPlans() {
               style={{ animationDelay: `${idx * 150}ms` }}
             >
               {idx === 1 && (
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#34C759] text-white text-sm font-medium py-1 px-3 rounded-full flex items-center gap-1">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 whitespace-nowrap bg-[#34C759] text-white text-sm font-medium py-1 px-3 rounded-full flex items-center gap-1">
                   <BadgeDollarSign className="w-4 h-4" />
                   <span>Aproveite enquanto o preço não é alterado!</span>
                 </div>
@@ -87,7 +87,7 @@ export function PricingPlans() {
               </div>
               <div className="text-muted-foreground mb-4">{plan.subtitle}</div>
               
-              <ul className="w-full mb-6">
+              <ul className="w-full mb-6 flex-grow">
                 {plan.features.map((feat, fIdx) => (
                   <li
                     key={feat.label}
@@ -113,7 +113,7 @@ export function PricingPlans() {
               
               <button 
                 onClick={scrollToDownloads}
-                className={`w-full py-3 rounded-lg text-lg font-semibold transition-colors duration-200 hover:scale-105 ${plan.button.style}`}
+                className={`w-full py-3 rounded-lg text-lg font-semibold transition-colors duration-200 hover:scale-105 mt-auto ${plan.button.style}`}
               >
                 {plan.button.text}
               </button>
