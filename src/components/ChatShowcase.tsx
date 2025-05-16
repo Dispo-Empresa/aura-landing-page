@@ -32,33 +32,29 @@ export function ChatShowcase() {
           <p className="mt-2 text-muted-foreground">Seus clientes não precisam instalar nada - funciona direto no navegador!</p>
         </div>
         
-        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center max-w-[90rem] mx-auto">
-  {/* Desktop chat mockup - versão maior */}
-  <div className="w-full lg:w-[95%] xl:w-[95%] shadow-xl rounded-xl overflow-hidden">
-    <AspectRatio ratio={16 / 9}>
-      <img 
-        src="/lovable-uploads/chat-desktop.png" 
-        alt="Chat de agendamentos no desktop" 
-        className="w-full h-full object-cover" 
-      />
-    </AspectRatio>
-  </div>
+        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center max-w-[80rem] mx-auto">
+          {/* Desktop chat mockup - versão reduzida */}
+          <div className="w-full lg:w-[85%] xl:w-[80%] shadow-xl rounded-xl overflow-hidden">
+            <AspectRatio ratio={16 / 9}>
+              <img 
+                src="/lovable-uploads/chat-desktop.png" 
+                alt="Chat de agendamentos no desktop" 
+                className="w-full h-full object-cover" 
+              />
+            </AspectRatio>
+          </div>
 
-  {/* Mobile chat mockup */}
-  <div className="w-full lg:w-[35%] xl:w-[30%] max-w-[380px] shadow-xl rounded-3xl overflow-hidden">
-    <AspectRatio ratio={9 / 16}>
-      <img 
-        src="/lovable-uploads/chat-mobile.png" 
-        alt="Chat de agendamentos no celular" 
-        className="w-full h-full object-cover" 
-      />
-    </AspectRatio>
-  </div>
-</div>
-
-
-
-
+          {/* Mobile chat mockup - versão reduzida */}
+          <div className="w-full lg:w-[30%] xl:w-[25%] max-w-[320px] shadow-xl rounded-3xl overflow-hidden">
+            <AspectRatio ratio={9 / 16}>
+              <img 
+                src="/lovable-uploads/chat-mobile.png" 
+                alt="Chat de agendamentos no celular" 
+                className="w-full h-full object-cover" 
+              />
+            </AspectRatio>
+          </div>
+        </div>
         
         <div className="text-center mt-12">
           <p className="text-lg font-medium">Seus clientes vão adorar a praticidade!</p>
