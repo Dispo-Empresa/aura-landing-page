@@ -80,7 +80,7 @@ export function Benefits() {
           <p className="text-lg font-medium text-[#2A98D2] mb-2">
             Você ainda não viu tudo que o Aura pode fazer por você!
           </p>
-          <p className="text-xl font-outfit max-w-2xl mx-auto">
+          <p className="text-md font-outfit max-w-2xl mx-auto">
             Além das funções incríveis já disponíveis, vem aí novidades que vão melhorar mais ainda sua rotina como barbeiro.
             🚀 Não perca tempo — teste grátis agora e saia na frente!
           </p>
