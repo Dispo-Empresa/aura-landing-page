@@ -78,10 +78,11 @@ export function Benefits() {
         {/* Mensagem de destaque após os cards */}
         <div className="mt-12 text-center">
           <p className="text-lg font-medium text-[#2A98D2] mb-2">
-            E isso não é tudo!
+            Você ainda não viu tudo que o Aura pode fazer por você!
           </p>
           <p className="text-xl font-outfit max-w-2xl mx-auto">
-            Muitas mais funcionalidades disponíveis no aplicativo para facilitar o seu dia a dia
+            Além das funções incríveis já disponíveis, vem aí novidades que vão melhorar mais ainda sua rotina como barbeiro.
+            🚀 Não perca tempo — teste grátis agora e saia na frente!
           </p>
         </div>
       </div>
