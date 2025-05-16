@@ -45,12 +45,10 @@ export function Benefits() {
   return (
     <section className="py-24 bg-muted">
       <div className="container">
-        <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-4">
+        <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-12">
           Tudo que você precisa para uma gestão tranquila
         </h2>
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          E muitas mais funcionalidades disponíveis no aplicativo para facilitar o seu dia a dia
-        </p>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit) => (
             <div
@@ -75,6 +73,16 @@ export function Benefits() {
               <p className="text-muted-foreground">{benefit.description}</p>
             </div>
           ))}
+        </div>
+        
+        {/* Mensagem de destaque após os cards */}
+        <div className="mt-12 text-center">
+          <p className="text-lg font-medium text-[#2A98D2] mb-2">
+            E isso não é tudo!
+          </p>
+          <p className="text-xl font-outfit max-w-2xl mx-auto">
+            Muitas mais funcionalidades disponíveis no aplicativo para facilitar o seu dia a dia
+          </p>
         </div>
       </div>
     </section>
