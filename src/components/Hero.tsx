@@ -63,7 +63,7 @@ export function Hero() {
         </div>
       </div>
       
-      <div className="container flex flex-col md:flex-row items-center justify-center gap-8 mt-14 md:mt-20">
+      <div className="container flex flex-col md:flex-row items-center justify-center gap-4 mt-14 md:mt-20">
         <div className="flex-1 flex flex-col items-center md:items-start animate-fade-in" style={{ animationDelay: "400ms" }}>
           <h2 className="text-3xl md:text-4xl font-outfit font-semibold mb-4 text-center md:text-left text-foreground">
             Sua rotina completa em um só lugar
@@ -72,9 +72,9 @@ export function Hero() {
             Tenha um resumo completo do seu dia como barbeiro: notificações, atalhos rápidos, dashboard com dados do dia, faturamento e próximos agendamentos, tudo ao alcance do seu toque.
           </p>
         </div>
-        <div className="flex-1 flex justify-center items-center relative animate-fade-in" style={{ animationDelay: "500ms" }}>
-          {/* Imagem reduzida e mais próxima do texto */}
-          <div className="w-52 sm:w-56 md:w-64 relative">
+        <div className="flex-1 flex justify-end items-center relative animate-fade-in" style={{ animationDelay: "500ms" }}>
+          {/* Imagem ainda menor e mais à direita */}
+          <div className="w-48 sm:w-52 md:w-60 relative">
             <img
               src="/lovable-uploads/home-screen.png"
               alt="Dashboard do app Aura exibindo resumo de agendamentos e faturamento"
@@ -87,4 +87,3 @@ export function Hero() {
     </section>
   );
 }
-

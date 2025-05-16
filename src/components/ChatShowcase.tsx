@@ -32,9 +32,9 @@ export function ChatShowcase() {
           <p className="mt-2 text-muted-foreground">Seus clientes não precisam instalar nada - funciona direto no navegador!</p>
         </div>
         
-        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center max-w-[80rem] mx-auto">
-          {/* Desktop chat mockup - versão reduzida */}
-          <div className="w-full lg:w-[85%] xl:w-[80%] shadow-xl rounded-xl overflow-hidden">
+        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center max-w-[75rem] mx-auto">
+          {/* Desktop chat mockup - versão ainda menor */}
+          <div className="w-full lg:w-[80%] xl:w-[75%] shadow-xl rounded-xl overflow-hidden">
             <AspectRatio ratio={16 / 9}>
               <img 
                 src="/lovable-uploads/chat-desktop.png" 
@@ -44,15 +44,15 @@ export function ChatShowcase() {
             </AspectRatio>
           </div>
 
-          {/* Mobile chat mockup - versão reduzida */}
-          <div className="w-full lg:w-[30%] xl:w-[25%] max-w-[320px] shadow-xl rounded-3xl overflow-hidden">
-            <AspectRatio ratio={9 / 16}>
+          {/* Mobile chat mockup - ajustado para mostrar mais conteúdo */}
+          <div className="w-full lg:w-[25%] xl:w-[22%] max-w-[280px] shadow-xl rounded-3xl overflow-hidden">
+            <div className="pt-3 pb-3">
               <img 
                 src="/lovable-uploads/chat-mobile.png" 
                 alt="Chat de agendamentos no celular" 
-                className="w-full h-full object-cover" 
+                className="w-full h-auto object-contain" 
               />
-            </AspectRatio>
+            </div>
           </div>
         </div>
         
