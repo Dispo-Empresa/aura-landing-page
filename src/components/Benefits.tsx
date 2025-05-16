@@ -1,5 +1,5 @@
 
-import { Calendar, Users, Smartphone, Clock, MessageCircle } from "lucide-react";
+import { Calendar, Users, Smartphone, Clock, MessageCircle, Bell } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const benefits = [
@@ -14,6 +14,12 @@ const benefits = [
     title: "Visão clara do dia",
     description: "Acompanhe todos os seus compromissos e resumo diário",
     premium: false
+  },
+  {
+    icon: Bell,
+    title: "Alertas e notificações",
+    description: "Receba avisos de novos agendamentos, reagendamentos e cancelamentos",
+    premium: true
   },
   {
     icon: Smartphone,
@@ -39,9 +45,12 @@ export function Benefits() {
   return (
     <section className="py-24 bg-muted">
       <div className="container">
-        <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-4">
           Tudo que você precisa para uma gestão tranquila
         </h2>
+        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          E muitas mais funcionalidades disponíveis no aplicativo para facilitar o seu dia a dia
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit) => (
             <div
@@ -53,7 +62,7 @@ export function Benefits() {
               }`}
             >
               {benefit.premium && (
-                <Badge className="absolute top-0 -translate-y-1/2 bg-[#34C759]/20 border border-[#34C759] text-[#34C759] mx-auto mt-5">
+                <Badge className="absolute top-0 -translate-y-1/2 bg-[#34C759]/20 border border-[#34C759] text-[#34C759] mx-auto mt-2">
                   Exclusivo do plano premium
                 </Badge>
               )}
