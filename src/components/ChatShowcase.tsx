@@ -32,30 +32,33 @@ export function ChatShowcase() {
           <p className="mt-2 text-muted-foreground">Seus clientes não precisam instalar nada - funciona direto no navegador!</p>
         </div>
         
-        {/* Layout com imagem desktop maior e celular ao lado */}
-        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center max-w-6xl mx-auto">
-          {/* Desktop chat mockup - versão maior */}
-          <div className="w-full lg:w-2/3 xl:w-3/4 shadow-xl rounded-xl overflow-hidden">
-            <AspectRatio ratio={16/9}>
-              <img 
-                src="/lovable-uploads/9d061049-621d-4456-8a52-6bf35caa6d89.png" 
-                alt="Chat de agendamentos no desktop" 
-                className="w-full h-full object-contain bg-white"
-              />
-            </AspectRatio>
-          </div>
-          
-          {/* Mobile chat mockup */}
-          <div className="w-full lg:w-1/3 xl:w-1/4 max-w-[280px] shadow-xl rounded-3xl overflow-hidden">
-            <AspectRatio ratio={9/16}>
-              <img 
-                src="/lovable-uploads/63a6a9b3-4037-454c-aafb-e38fd5e14e31.png" 
-                alt="Chat de agendamentos no celular" 
-                className="w-full h-full object-contain bg-white"
-              />
-            </AspectRatio>
-          </div>
-        </div>
+        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center max-w-[90rem] mx-auto">
+  {/* Desktop chat mockup - versão maior */}
+  <div className="w-full lg:w-[95%] xl:w-[95%] shadow-xl rounded-xl overflow-hidden">
+    <AspectRatio ratio={16 / 9}>
+      <img 
+        src="/lovable-uploads/chat-desktop.png" 
+        alt="Chat de agendamentos no desktop" 
+        className="w-full h-full object-cover" 
+      />
+    </AspectRatio>
+  </div>
+
+  {/* Mobile chat mockup */}
+  <div className="w-full lg:w-[35%] xl:w-[30%] max-w-[380px] shadow-xl rounded-3xl overflow-hidden">
+    <AspectRatio ratio={9 / 16}>
+      <img 
+        src="/lovable-uploads/chat-mobile.png" 
+        alt="Chat de agendamentos no celular" 
+        className="w-full h-full object-cover" 
+      />
+    </AspectRatio>
+  </div>
+</div>
+
+
+
+
         
         <div className="text-center mt-12">
           <p className="text-lg font-medium">Seus clientes vão adorar a praticidade!</p>
