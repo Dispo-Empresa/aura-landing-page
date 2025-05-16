@@ -76,7 +76,7 @@ export function Hero() {
           {/* Single mockup image replacing the previous three mockups */}
           <div className="w-64 sm:w-72 md:w-80 relative">
             <img
-              src="/lovable-uploads/05405c4f-72f3-422b-bf8d-a5137f703653.png"
+              src="/lovable-uploads/home-screen.png"
               alt="Dashboard do app Aura exibindo resumo de agendamentos e faturamento"
               className="w-full rounded-3xl shadow-xl hover:scale-105 transition-transform duration-300"
               style={{ zIndex: 3 }}
