@@ -63,25 +63,28 @@ export function Hero() {
         </div>
       </div>
       
-      <div className="container flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 mt-14 md:mt-20">
-        <div className="flex flex-col max-w-xl items-start animate-fade-in" style={{ animationDelay: "400ms" }}>
-          <h2 className="text-3xl md:text-4xl font-outfit font-semibold mb-4 text-foreground">
-            Tudo que você precisa para o seu dia de barbeiro, em um só lugar
-          </h2>
-          <p className="text-lg text-muted-foreground mb-6">
-            Veja de forma fácil e rápida tudo sobre seu dia: seus agendamentos, ganhos do dia, horários e notificações importantes. O Aura reúne tudo que você precisa para organizar sua rotina, sem complicação.
-          </p>
-        </div>
-        <div className="flex justify-center items-center animate-fade-in" style={{ animationDelay: '500ms' }}>
-          <div className="w-[26rem] sm:w-[28rem] md:w-[32rem]">
-            <img
-              src="/lovable-uploads/hero-screens.png"
-              alt="Dashboard do app Aura exibindo resumo de agendamentos e faturamento"
-              className="w-full rounded-3xl shadow-xl hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-        </div>
-      </div>
+      <div className="container flex flex-col md:flex-row items-center justify-center gap-[10rem] mt-14 md:mt-20">
+  <div className="flex flex-col max-w-xl items-start animate-fade-in" style={{ animationDelay: "400ms" }}>
+    <h2 className="text-3xl md:text-4xl font-outfit font-semibold mb-4 text-foreground">
+      Tudo que você precisa para o seu dia de barbeiro, em um só lugar
+    </h2>
+    <p className="text-lg text-muted-foreground mb-6">
+      Veja de forma fácil e rápida tudo sobre seu dia: seus agendamentos, ganhos do dia, horários e notificações importantes. O Aura reúne tudo que você precisa para organizar sua rotina, sem complicação.
+    </p>
+  </div>
+  <div className="flex justify-center items-center animate-fade-in" style={{ animationDelay: '500ms' }}>
+  <div className="w-[30rem] sm:w-[32rem] md:w-[36rem]">
+    <img
+      src="/lovable-uploads/hero-screens.png"
+      alt="Dashboard do app Aura exibindo resumo de agendamentos e faturamento"
+      className="w-full rounded-3xl shadow-xl hover:scale-105 transition-transform duration-300"
+    />
+</div>
+</div>
+
+</div>
+
+
     </section>
   );
 }

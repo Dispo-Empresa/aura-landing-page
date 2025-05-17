@@ -58,9 +58,8 @@ export function PricingPlans() {
   };
 
   return (
-    <section className="py-24 bg-muted relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#2A98D2]/10 rounded-full blur-3xl opacity-70"></div>
-      <div className="container relative z-10">
+    <section className="py-24 bg-muted">
+      <div className="container">
         <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-8 animate-fade-in">
           Simples para começar. Completo para crescer.
         </h2>

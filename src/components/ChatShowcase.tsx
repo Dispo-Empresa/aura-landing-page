@@ -8,9 +8,8 @@ export function ChatShowcase() {
   const isMobile = useIsMobile();
   
   return (
-    <section className="py-20 md:py-28 bg-card/50 relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#2A98D2]/10 rounded-full blur-3xl opacity-70"></div>
-      <div className="container px-4 relative z-10">
+    <section className="py-20 md:py-28 bg-card/50">
+      <div className="container px-4">
         <div className="flex items-center justify-center gap-2 mb-6">
           <Badge className="bg-[#34C759]/20 border border-[#34C759] text-[#34C759]">
             Exclusivo do plano premium
@@ -33,9 +32,9 @@ export function ChatShowcase() {
           <p className="mt-2 text-muted-foreground">Seus clientes não precisam instalar nada - funciona direto no navegador!</p>
         </div>
         
-        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center max-w-[60rem] mx-auto">
-          {/* Desktop chat mockup */}
-          <div className="w-full lg:w-[65%] xl:w-[65%] shadow-xl rounded-xl overflow-hidden">
+        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center max-w-[70rem] mx-auto">
+          {/* Desktop chat mockup - versão reduzida ainda mais */}
+          <div className="w-full lg:w-[70%] xl:w-[70%] shadow-xl rounded-xl overflow-hidden">
             <AspectRatio ratio={16 / 9}>
               <img 
                 src="/lovable-uploads/chat-desktop.png" 
@@ -45,9 +44,9 @@ export function ChatShowcase() {
             </AspectRatio>
           </div>
 
-          {/* Mobile chat mockup */}
-          <div className="w-full lg:w-[20%] xl:w-[18%] max-w-[220px] shadow-xl rounded-3xl overflow-hidden">
-            <div className="pt-2 pb-2">
+          {/* Mobile chat mockup - mantendo ajustes anteriores */}
+          <div className="w-full lg:w-[25%] xl:w-[22%] max-w-[280px] shadow-xl rounded-3xl overflow-hidden">
+            <div className="pt-3 pb-3">
               <img 
                 src="/lovable-uploads/chat-mobile.png" 
                 alt="Chat de agendamentos no celular" 

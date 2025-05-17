@@ -28,7 +28,7 @@ const Index = () => {
       <FAQ />
       
       <section className="py-20 md:py-28 relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#2A98D2]/10 rounded-full blur-3xl opacity-70"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#2A98D2]/10 rounded-full blur-3xl opacity-70"></div>
         <div className="container text-center px-4 relative z-10">
           <div className="flex items-center justify-center gap-2 mb-6">
             <Scissors className="w-5 h-5 text-[#2A98D2]" />
