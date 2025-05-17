@@ -63,7 +63,7 @@ export function Hero() {
         </div>
       </div>
       
-      <div className="container flex flex-col md:flex-row items-center justify-center gap-4 mt-14 md:mt-20">
+      <div className="container flex flex-col md:flex-row items-center justify-center gap-2 mt-14 md:mt-20">
         <div className="flex-1 flex flex-col items-center md:items-start animate-fade-in" style={{ animationDelay: "400ms" }}>
           <h2 className="text-3xl md:text-4xl font-outfit font-semibold mb-4 text-center md:text-left text-foreground">
             Sua rotina completa em um só lugar
@@ -73,8 +73,8 @@ export function Hero() {
           </p>
         </div>
         <div className="flex-1 flex justify-end items-center relative animate-fade-in" style={{ animationDelay: "500ms" }}>
-          {/* Imagem ainda menor e mais à direita */}
-          <div className="w-48 sm:w-52 md:w-60 relative">
+          {/* Imagem próxima ao texto */}
+          <div className="w-48 sm:w-52 md:w-60 relative -ml-6 md:ml-0">
             <img
               src="/lovable-uploads/home-screen.png"
               alt="Dashboard do app Aura exibindo resumo de agendamentos e faturamento"
