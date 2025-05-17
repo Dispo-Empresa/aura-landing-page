@@ -27,9 +27,9 @@ const plans = [
   },
   {
     title: "Plano Premium",
-    price: "R$ 29,90/mês",
-    originalPrice: "R$ 39,90",
-    subtitle: "Para barbearias que querem crescer",
+    price: "R$ 34,90/mês",
+    originalPrice: "R$ 45,90",
+    subtitle: "Por menos do que você cobra por um corte",
     features: [
       { label: "Múltiplos barbeiros", included: true },
       { label: "Agenda com horários configuráveis", included: true },
@@ -84,7 +84,7 @@ export function PricingPlans() {
                 )}
                 <div className="text-3xl font-bold">{plan.price}</div>
               </div>
-              <div className="text-muted-foreground mb-4">{plan.subtitle}</div>
+              <div className="text-muted-foreground mb-4 font-bold">{plan.subtitle}</div>
               
               <ul className="w-full mb-6 flex-grow">
                 {plan.features.map((feat, fIdx) => (

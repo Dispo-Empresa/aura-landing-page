@@ -36,11 +36,12 @@ const Index = () => {
           </div>
           
           <h2 className="text-3xl md:text-4xl font-outfit font-semibold mb-6">
-            Deixe o trabalho pesado com o Aura
+            Deixe a organização com o Aura
           </h2>
           
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Configure seus dias como quiser — do jeito que só você sabe fazer. Enquanto o Aura cuida da sua agenda, você foca no que realmente importa: cortar, atender, conversar e fazer acontecer. É como ter um braço direito digital, sem custo pra começar.
+            Monte seus dias do seu jeito — com a liberdade de quem sabe o que faz. Enquanto o Aura organiza sua agenda, você foca no que importa: atender bem, cortar com excelência e fidelizar no papo.
+            É como ter um braço direito digital — por menos do que você cobra por um corte.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "300ms" }}>
             <a
