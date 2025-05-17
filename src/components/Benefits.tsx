@@ -60,7 +60,7 @@ export function Benefits() {
               }`}
             >
               {benefit.premium && (
-                <Badge className="absolute top-0 -translate-y-1/2 bg-[#34C759]/20 border border-[#34C759] text-[#34C759] mx-auto mt-2">
+                <Badge className="absolute top-0 -translate-y-1/2 bg-[#34C759]/20 border border-[#34C759] text-[#34C759] mx-auto mt-4">
                   Exclusivo do plano premium
                 </Badge>
               )}

@@ -32,25 +32,25 @@ export function ChatShowcase() {
           <p className="mt-2 text-muted-foreground">Seus clientes não precisam instalar nada - funciona direto no navegador!</p>
         </div>
         
-        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center max-w-[70rem] mx-auto">
+        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center max-w-[70rem] mx-auto animate-fade-in">
           {/* Desktop chat mockup - versão reduzida ainda mais */}
           <div className="w-full lg:w-[70%] xl:w-[70%] shadow-xl rounded-xl overflow-hidden">
             <AspectRatio ratio={16 / 9}>
               <img 
                 src="/lovable-uploads/chat-desktop.png" 
                 alt="Chat de agendamentos no desktop" 
-                className="w-full h-full object-cover" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" 
               />
             </AspectRatio>
           </div>
 
           {/* Mobile chat mockup - mantendo ajustes anteriores */}
-          <div className="w-full lg:w-[25%] xl:w-[22%] max-w-[280px] shadow-xl rounded-3xl overflow-hidden">
+          <div className="w-full lg:w-[25%] xl:w-[22%] max-w-[280px] shadow-xl rounded-3xl overflow-hidden animate-fade-in">
             <div className="pt-3 pb-3">
               <img 
                 src="/lovable-uploads/chat-mobile.png" 
                 alt="Chat de agendamentos no celular" 
-                className="w-full h-auto object-contain" 
+                className="w-full h-auto object-contain hover:scale-105 transition-transform duration-300" 
               />
             </div>
           </div>

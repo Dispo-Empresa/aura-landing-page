@@ -42,24 +42,28 @@ const Index = () => {
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
             Configure seus dias como quiser — do jeito que só você sabe fazer. Enquanto o Aura cuida da sua agenda, você foca no que realmente importa: cortar, atender, conversar e fazer acontecer. É como ter um braço direito digital, sem custo pra começar.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "300ms" }}>
             <a
-              href={GOOGLE_PLAY_URL}
-              className="w-full sm:w-auto inline-flex justify-center"
+              href="#"
+              className="w-full sm:w-auto inline-flex justify-center hover:scale-105 transition-transform duration-300"
               aria-label="Baixar para Android"
-              target="_blank"
-              rel="noopener noreferrer"
             >
-              <img src="/lovable-uploads/google-play.png" alt="Disponível no Google Play" className="h-14 w-auto max-w-[200px]" />
+              <img 
+                src="/lovable-uploads/google-play.png" 
+                alt="Disponível no Google Play" 
+                className="h-14 w-auto max-w-[200px]" 
+              />
             </a>
             <a
-              href={APP_STORE_URL}
-              className="w-full sm:w-auto inline-flex justify-center"
+              href="#"
+              className="w-full sm:w-auto inline-flex justify-center hover:scale-105 transition-transform duration-300"
               aria-label="Baixar para iOS"
-              target="_blank"
-              rel="noopener noreferrer"
             >
-              <img src="/lovable-uploads/ios.png" alt="Disponível na App Store" className="h-16 w-auto max-w-[200px]" />
+              <img 
+                src="/lovable-uploads/ios.png" 
+                alt="Disponível na App Store" 
+                className="h-16 w-auto max-w-[200px]" 
+              />
             </a>
           </div>
           
