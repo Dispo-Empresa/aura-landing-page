@@ -3,8 +3,9 @@ import { Smartphone, Calendar, Users } from "lucide-react";
 
 export function AppMobileDesktopMockups() {
   return (
-    <section className="py-24 overflow-hidden bg-muted">
-      <div className="container">
+    <section className="py-24 overflow-hidden bg-muted relative">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#2A98D2]/10 rounded-full blur-3xl opacity-70"></div>
+      <div className="container relative z-10">
         <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-12">
           Seu negócio na palma da sua mão
         </h2>
@@ -32,4 +33,3 @@ export function AppMobileDesktopMockups() {
     </section>
   );
 }
-
