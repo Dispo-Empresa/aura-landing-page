@@ -12,10 +12,10 @@ export function Hero() {
             <span className="text-sm uppercase tracking-wider text-[#2A98D2] font-medium">Feito para barbeiros</span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-outfit font-bold leading-tight mb-6 text-foreground animate-fade-in" style={{ animationDelay: "100ms" }}>
-            Controle total da sua agenda, sem complicação
+            Agenda cheia, cabeça leve. Com o Aura, dá pra ter os dois.
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-10 animate-fade-in" style={{ animationDelay: "200ms" }}>
-            Sua barbearia mais organizada e seus clientes mais satisfeitos. Agende, gerencie e cresça com o Aura.
+            Tenha controle total da agenda, organize horários e encante seus clientes. Com o Aura, sua rotina flui sem estresse e seu negócio cresce com você.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "300ms" }}>
             <a
@@ -50,7 +50,7 @@ export function Hero() {
               <div className="flex-grow h-px bg-border"></div>
             </div>
             
-            <p className="text-sm text-muted-foreground mb-3">Escaneie o QR code para baixar o app</p>
+            <p className="text-sm text-muted-foreground mb-3">Escaneie o QR Code para acessar a página do Aura na sua loja de aplicativos.</p>
             
             <div className="bg-white p-2 rounded-lg shadow-md">
               <img 
@@ -63,27 +63,28 @@ export function Hero() {
         </div>
       </div>
       
-      <div className="container flex flex-col md:flex-row items-center justify-center gap-2 mt-14 md:mt-20">
-        <div className="flex-1 flex flex-col items-center md:items-start animate-fade-in" style={{ animationDelay: "400ms" }}>
-          <h2 className="text-3xl md:text-4xl font-outfit font-semibold mb-4 text-center md:text-left text-foreground">
-            Sua rotina completa em um só lugar
-          </h2>
-          <p className="text-lg text-muted-foreground mb-6 text-center md:text-left">
-            Tenha um resumo completo do seu dia como barbeiro: notificações, atalhos rápidos, dashboard com dados do dia, faturamento e próximos agendamentos, tudo ao alcance do seu toque.
-          </p>
-        </div>
-        <div className="flex-1 flex justify-end items-center relative animate-fade-in" style={{ animationDelay: "500ms" }}>
-          {/* Imagem próxima ao texto */}
-          <div className="w-48 sm:w-52 md:w-60 relative -ml-6 md:ml-0">
-            <img
-              src="/lovable-uploads/home-screen.png"
-              alt="Dashboard do app Aura exibindo resumo de agendamentos e faturamento"
-              className="w-full rounded-3xl shadow-xl hover:scale-105 transition-transform duration-300"
-              style={{ zIndex: 3 }}
-            />
-          </div>
-        </div>
-      </div>
+      <div className="container flex flex-col md:flex-row items-center justify-center gap-[10rem] mt-14 md:mt-20">
+  <div className="flex flex-col max-w-xl items-start animate-fade-in" style={{ animationDelay: "400ms" }}>
+    <h2 className="text-3xl md:text-4xl font-outfit font-semibold mb-4 text-foreground">
+      Tudo que você precisa para o seu dia de barbeiro, em um só lugar
+    </h2>
+    <p className="text-lg text-muted-foreground mb-6">
+      Veja de forma fácil e rápida tudo sobre seu dia: seus agendamentos, ganhos do dia, horários e notificações importantes. O Aura reúne tudo que você precisa para organizar sua rotina, sem complicação.
+    </p>
+  </div>
+  <div className="flex justify-center items-center animate-fade-in" style={{ animationDelay: '500ms' }}>
+  <div className="w-[30rem] sm:w-[32rem] md:w-[36rem]">
+    <img
+      src="/lovable-uploads/hero-screens.png"
+      alt="Dashboard do app Aura exibindo resumo de agendamentos e faturamento"
+      className="w-full rounded-3xl shadow-xl hover:scale-105 transition-transform duration-300"
+    />
+</div>
+</div>
+
+</div>
+
+
     </section>
   );
 }

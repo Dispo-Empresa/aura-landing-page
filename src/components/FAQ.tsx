@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "Como os meus clientes vão agendar?",
-    answer: "No plano gratuito, o barbeiro agenda manualmente. No plano premium, o cliente pode agendar por links próprios e recebe confirmações automáticas por WhatsApp."
+    answer: "No plano gratuito, o barbeiro agenda manualmente. No plano premium, o cliente pode agendar por links próprios e eles recebem confirmações automáticas por WhatsApp."
   },
   {
     question: "E se eu tiver imprevistos no dia e precisar mudar os horários?",

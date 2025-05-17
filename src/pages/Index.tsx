@@ -36,11 +36,11 @@ const Index = () => {
           </div>
           
           <h2 className="text-3xl md:text-4xl font-outfit font-semibold mb-6">
-            Deixe os agendamentos com o Aura e <br className="hidden md:block" />foque no que você faz de melhor
+            Deixe o trabalho pesado com o Aura
           </h2>
           
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Configure sua rotina, folgas e horários do seu jeito. Comece grátis e cresça conforme sua necessidade.
+            Configure seus dias como quiser — do jeito que só você sabe fazer. Enquanto o Aura cuida da sua agenda, você foca no que realmente importa: cortar, atender, conversar e fazer acontecer. É como ter um braço direito digital, sem custo pra começar.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
@@ -71,7 +71,7 @@ const Index = () => {
               <div className="flex-grow h-px bg-border"></div>
             </div>
             
-            <p className="text-sm text-muted-foreground mb-3">Escaneie o QR code para baixar o app</p>
+            <p className="text-sm text-muted-foreground mb-3">Escaneie o QR Code para acessar a página do Aura na sua loja de aplicativos.</p>
             
             <div className="bg-white p-2 rounded-lg shadow-md">
               <img 
@@ -90,14 +90,14 @@ const Index = () => {
             <div className="flex flex-col items-center md:items-start">
               <Logo />
               <p className="text-sm text-muted-foreground mt-2">
-                Organize sua barbearia. Simplifique sua vida.
+                Tudo em ordem. Tudo no seu tempo. Tudo com o Aura.
               </p>
               <div className="flex flex-col md:flex-row items-center md:items-start gap-2 mt-2">
                 <p className="text-sm text-muted-foreground flex items-center">
                   <span>Um produto da</span>
                   <span className="font-medium text-foreground ml-1">Dispo</span>
                   <span className="ml-1">•</span>
-                  <span className="ml-1 text-muted-foreground">Tecnologia para pequenos negócios</span>
+                  <span className="ml-1 text-muted-foreground">Inovação feita para quem faz acontecer</span>
                 </p>
                 <a 
                   href="https://www.dispo.net.br/"
