@@ -1,6 +1,7 @@
 
 import { Check, X, BadgeDollarSign } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const plans = [
   {
@@ -50,6 +51,8 @@ const plans = [
 ];
 
 export function PricingPlans() {
+  const isMobile = useIsMobile();
+  
   const scrollToDownloads = () => {
     const heroSection = document.querySelector('section.py-20');
     if (heroSection) {
@@ -58,8 +61,9 @@ export function PricingPlans() {
   };
 
   return (
-    <section className="py-24 bg-muted">
-      <div className="container">
+    <section className="py-24 bg-muted relative overflow-hidden">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#2A98D2]/10 rounded-full blur-3xl opacity-70"></div>
+      <div className="container relative z-10">
         <h2 className="text-3xl md:text-4xl font-outfit font-semibold text-center mb-8 animate-fade-in">
           Simples para começar. Completo para crescer.
         </h2>
@@ -71,34 +75,34 @@ export function PricingPlans() {
               style={{ animationDelay: `${idx * 150}ms` }}
             >
               {idx === 1 && (
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 whitespace-nowrap bg-[#34C759] text-white text-sm font-medium py-1 px-3 rounded-full flex items-center gap-1">
-                  <BadgeDollarSign className="w-4 h-4" />
-                  <span>Aproveite enquanto o preço não é alterado!</span>
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 whitespace-nowrap bg-[#34C759] text-white text-xs sm:text-sm font-medium py-1 px-3 rounded-full flex items-center gap-1 max-w-[90%] mx-auto">
+                  <BadgeDollarSign className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <span className="truncate">Aproveite enquanto o preço não é alterado!</span>
                 </div>
               )}
               
               <h3 className="text-2xl font-medium mb-1 font-outfit">{plan.title}</h3>
-              <div className="flex items-end mb-1">
+              <div className="flex flex-wrap items-end justify-center mb-1">
                 {plan.originalPrice && (
-                  <span className="text-lg text-muted-foreground line-through mr-2">{plan.originalPrice}</span>
+                  <span className="text-sm sm:text-lg text-muted-foreground line-through mr-2">{plan.originalPrice}</span>
                 )}
-                <div className="text-3xl font-bold">{plan.price}</div>
+                <div className="text-2xl sm:text-3xl font-bold">{plan.price}</div>
               </div>
-              <div className="text-muted-foreground mb-4 font-bold">{plan.subtitle}</div>
+              <div className="text-muted-foreground mb-4 font-bold text-sm sm:text-base text-center">{plan.subtitle}</div>
               
               <ul className="w-full mb-6 flex-grow">
                 {plan.features.map((feat, fIdx) => (
                   <li
                     key={feat.label}
-                    className={`flex items-center gap-2 py-1 text-base ${feat.included ? "text-foreground" : "text-muted-foreground/60 line-through"}`}
+                    className={`flex items-center gap-2 py-1 text-sm sm:text-base ${feat.included ? "text-foreground" : "text-muted-foreground/60 line-through"}`}
                     style={{ animationDelay: `${(idx + fIdx) * 50}ms` }}
                   >
                     {feat.included ? (
-                      <Check className="w-5 h-5 text-[#34C759]" />
+                      <Check className="w-5 h-5 text-[#34C759] flex-shrink-0" />
                     ) : (
-                      <X className="w-5 h-5 text-red-400/70" />
+                      <X className="w-5 h-5 text-red-400/70 flex-shrink-0" />
                     )}
-                    {feat.label}
+                    <span>{feat.label}</span>
                   </li>
                 ))}
               </ul>

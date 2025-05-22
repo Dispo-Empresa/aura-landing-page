@@ -98,12 +98,12 @@ const Index = () => {
                 Tudo em ordem. Tudo no seu tempo. Tudo com o Aura.
               </p>
               <div className="flex flex-col md:flex-row items-center md:items-start gap-2 mt-2">
-                <p className="text-sm text-muted-foreground flex items-center">
+                <div className="text-sm text-center md:text-left flex flex-wrap justify-center md:justify-start items-center">
                   <span>Um produto da</span>
-                  <span className="font-medium text-foreground ml-1">Dispo</span>
-                  <span className="ml-1">•</span>
-                  <span className="ml-1 text-muted-foreground">Inovação feita para quem faz acontecer</span>
-                </p>
+                  <span className="font-medium text-foreground mx-1">Dispo</span>
+                  <span className="hidden md:inline mx-1">•</span>
+                  <span className="block w-full md:inline md:w-auto md:ml-1 text-muted-foreground">Inovação feita para quem faz acontecer</span>
+                </div>
                 <a 
                   href="https://www.dispo.net.br/"
                   target="_blank"
