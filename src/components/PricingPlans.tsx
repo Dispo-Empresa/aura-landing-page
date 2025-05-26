@@ -17,7 +17,7 @@ const plans = [
       { label: "Alertas e notificações", included: false },
       { label: "Gestão de equipe", included: false },
       { label: "Link compartilhável de chatbot para agendamento online", included: false },
-      { label: "Intergação com WhatsApp para confirmações de agendamento e afins", included: false },
+      { label: "Integração com WhatsApp para confirmações de agendamento e afins", included: false },
       { label: "Suporte prioritário", included: false },
     ],
     button: {
@@ -39,7 +39,7 @@ const plans = [
       { label: "Gestão de equipe", included: true },
       { label: "Agendamento manual", included: true },
       { label: "Link compartilhável de ChatBot para agendamentos online", included: true },
-      { label: "Intergação com WhatsApp para confirmações de agendamento e afins", included: true },
+      { label: "Integração com WhatsApp para confirmações de agendamento e afins", included: true },
       { label: "Suporte prioritário", included: true },
     ],
     button: {
