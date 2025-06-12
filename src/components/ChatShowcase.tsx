@@ -34,8 +34,8 @@ export function ChatShowcase() {
         </div>
         
         <div className="flex flex-col lg:flex-row gap-10 items-center justify-center max-w-[70rem] mx-auto">
-          {/* Desktop chat mockup com efeito hover scale */}
-          <div className="w-full lg:w-[70%] xl:w-[70%] shadow-xl rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105">
+          {/* Desktop chat mockup com tamanho aumentado */}
+          <div className="w-full lg:w-[75%] xl:w-[75%] shadow-xl rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105">
             <AspectRatio ratio={16 / 9}>
               <img 
                 src="/lovable-uploads/chat-desktop.png" 
@@ -45,8 +45,8 @@ export function ChatShowcase() {
             </AspectRatio>
           </div>
 
-          {/* Mobile chat mockup - mantendo ajustes anteriores */}
-          <div className="w-full lg:w-[25%] xl:w-[22%] max-w-[280px] shadow-xl rounded-3xl overflow-hidden animate-fade-in">
+          {/* Mobile chat mockup */}
+          <div className="w-full lg:w-[22%] xl:w-[20%] max-w-[280px] shadow-xl rounded-3xl overflow-hidden animate-fade-in">
             <div className="pt-3 pb-3">
               <img 
                 src="/lovable-uploads/chat-mobile.png" 
