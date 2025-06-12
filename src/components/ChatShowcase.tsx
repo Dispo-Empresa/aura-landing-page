@@ -45,8 +45,8 @@ export function ChatShowcase() {
             </AspectRatio>
           </div>
 
-          {/* Mobile chat mockup */}
-          <div className="w-full lg:w-[22%] xl:w-[20%] max-w-[280px] shadow-xl rounded-3xl overflow-hidden animate-fade-in">
+          {/* Mobile chat mockup - aumentando ligeiramente o tamanho */}
+          <div className="w-full lg:w-[24%] xl:w-[22%] max-w-[300px] shadow-xl rounded-3xl overflow-hidden animate-fade-in">
             <div className="pt-3 pb-3">
               <img 
                 src="/lovable-uploads/chat-mobile.png" 
