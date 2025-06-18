@@ -1,11 +1,10 @@
-
 import { Check, X, BadgeDollarSign } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const plans = [
   {
-    title: "Plano Gratuito",
+    title: "Plano Básico",
     price: "R$ 0",
     subtitle: "Perfeito para começar seu controle",
     features: [
@@ -15,7 +14,6 @@ const plans = [
       { label: "Dashboards com informações do dia de trabalho", included: true },
       { label: "Múltiplos barbeiros", included: false },
       { label: "Alertas e notificações", included: false },
-      { label: "Gestão de equipe", included: false },
       { label: "Link compartilhável de chatbot para agendamento online", included: false },
       { label: "Integração com WhatsApp para confirmações de agendamento e afins", included: false },
       { label: "Suporte prioritário", included: false },
@@ -36,7 +34,6 @@ const plans = [
       { label: "Agenda com horários configuráveis", included: true },
       { label: "Dashboards com informações do dia de trabalho", included: true },
       { label: "Alertas e notificações", included: true },
-      { label: "Gestão de equipe", included: true },
       { label: "Agendamento manual", included: true },
       { label: "Link compartilhável de ChatBot para agendamentos online", included: true },
       { label: "Integração com WhatsApp para confirmações de agendamento e afins", included: true },
