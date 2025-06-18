@@ -1,3 +1,4 @@
+
 import { Check, X, BadgeDollarSign } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -10,7 +11,7 @@ const plans = [
     features: [
       { label: "Limitado a 1 barbeiro", included: true },
       { label: "Agenda com horários configuráveis", included: true },
-      { label: "Apenas agendamento manual", included: true },
+      { label: "Apenas agendamentos manuais pelo app", included: true },
       { label: "Dashboards com informações do dia de trabalho", included: true },
       { label: "Múltiplos barbeiros", included: false },
       { label: "Alertas e notificações", included: false },
