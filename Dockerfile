@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm ci --no-audit --no-fund --prefer-offline
+RUN npm install
 
 COPY . .
 
