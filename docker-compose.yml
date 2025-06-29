@@ -1,0 +1,7 @@
+services:
+  aura_landingpage:
+    build: .
+    ports:
+      - "3001:80"
+    container_name: aura_landingpage
+    restart: always
